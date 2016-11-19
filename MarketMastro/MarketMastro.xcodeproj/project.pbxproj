@@ -121,6 +121,7 @@
 		04D5F8491DD4BDE200CE1091 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D5F8471DD4BDE200CE1091 /* LaunchScreen.storyboard */; };
 		04D5F8541DD4BDE200CE1091 /* MarketMastroTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D5F8531DD4BDE200CE1091 /* MarketMastroTests.m */; };
 		04D5F85F1DD4BDE200CE1091 /* MarketMastroUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D5F85E1DD4BDE200CE1091 /* MarketMastroUITests.m */; };
+		AB91F1C11DE073A00032AD9A /* ChangePassword.png in Resources */ = {isa = PBXBuildFile; fileRef = AB91F1C01DE073A00032AD9A /* ChangePassword.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -205,6 +206,7 @@
 		04D5F85A1DD4BDE200CE1091 /* MarketMastroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarketMastroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04D5F85E1DD4BDE200CE1091 /* MarketMastroUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarketMastroUITests.m; sourceTree = "<group>"; };
 		04D5F8601DD4BDE200CE1091 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB91F1C01DE073A00032AD9A /* ChangePassword.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChangePassword.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -312,6 +314,7 @@
 				04D5F83D1DD4BDE100CE1091 /* AppDelegate.m */,
 				04D5F83F1DD4BDE100CE1091 /* ViewController.h */,
 				04D5F8401DD4BDE100CE1091 /* ViewController.m */,
+				AB91F1C01DE073A00032AD9A /* ChangePassword.png */,
 				04D5F8421DD4BDE200CE1091 /* Main.storyboard */,
 				04D5F8451DD4BDE200CE1091 /* Assets.xcassets */,
 				04D5F8471DD4BDE200CE1091 /* LaunchScreen.storyboard */,
@@ -486,6 +489,7 @@
 				0438173C1DD7664700FCEB7D /* reg_mobile_icon@3x.png in Resources */,
 				043817511DD766B600FCEB7D /* reg_target_icon@3x.png in Resources */,
 				043817731DD9F84600FCEB7D /* otp_lock_icon@3x.png in Resources */,
+				AB91F1C11DE073A00032AD9A /* ChangePassword.png in Resources */,
 				043817181DD74AFB00FCEB7D /* res_logo_icon@2x.png in Resources */,
 				043817301DD7664700FCEB7D /* reg_location_icon@2x.png in Resources */,
 				043817561DD80BC700FCEB7D /* unchecked_checkbox.png in Resources */,
