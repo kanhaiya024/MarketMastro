@@ -23,6 +23,14 @@
     self.btnContinue.layer.cornerRadius = 3.0f; // this value vary as per your desire
     self.btnContinue.clipsToBounds = YES;
 }
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:YES];
+    [self.navigationController.navigationBar setHidden:YES];
+}
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:YES];
+    [self.navigationController.navigationBar setHidden:NO];
+}
 - (UITextField *)placeHolderColor:(UITextField *)txt withSting:(NSString *)placeHolderString {
     UIColor *color = [UIColor colorWithRed:154/255.0 green:154/255.0 blue:154/255.0 alpha:1.0];
     txt.attributedPlaceholder = [[NSAttributedString alloc] initWithString:placeHolderString attributes:@{NSForegroundColorAttributeName: color}];

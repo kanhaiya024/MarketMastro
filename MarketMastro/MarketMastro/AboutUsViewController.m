@@ -1,23 +1,21 @@
 //
-//  MainDashboardViewController.m
+//  AboutUsViewController.m
 //  MarketMastro
 //
-//  Created by Mac on 14/11/16.
+//  Created by Mac on 17/11/16.
 //  Copyright © 2016 Macmittal software. All rights reserved.
 //
 
-#import "MainDashboardViewController.h"
+#import "AboutUsViewController.h"
 #import "SWRevealViewController.h"
-@interface MainDashboardViewController ()
+@interface AboutUsViewController ()
 
 @end
 
-@implementation MainDashboardViewController
+@implementation AboutUsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //[self.navigationController.navigationBar setTintColor:[UIColor colorWithRed:23/255.0 green:25/255.0 blue:27/255.0 alpha:1.0]];
-    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:23/255.0 green:25/255.0 blue:27/255.0 alpha:1.0]];
     // Do any additional setup after loading the view.
     SWRevealViewController *revealViewController = self.revealViewController;
     if ( revealViewController )
@@ -27,10 +25,7 @@
         [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
     }
 }
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:YES];
-    [self.navigationController.navigationBar setTintColor:[UIColor colorWithRed:23/255.0 green:25/255.0 blue:27/255.0 alpha:1.0]];
-}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

@@ -10,15 +10,13 @@
 
 @interface AppDelegate ()
 
-
 @end
 
 @implementation AppDelegate
-//testing
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    NSLog(@"test anurag");
     return YES;
 }
 

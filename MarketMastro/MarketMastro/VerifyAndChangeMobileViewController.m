@@ -29,7 +29,14 @@
     self.btnChangeMobileNumber.layer.cornerRadius = 3.0f; // this value vary as per your desire
     self.btnChangeMobileNumber.clipsToBounds = YES;
 }
-
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:YES];
+    [self.navigationController.navigationBar setHidden:YES];
+}
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:YES];
+    [self.navigationController.navigationBar setHidden:NO];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

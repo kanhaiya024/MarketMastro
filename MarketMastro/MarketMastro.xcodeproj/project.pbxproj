@@ -92,6 +92,27 @@
 		0438178C1DDB389A00FCEB7D /* SidebarTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0438178B1DDB389900FCEB7D /* SidebarTableViewController.m */; };
 		0438178D1DDB389A00FCEB7D /* SidebarTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0438178B1DDB389900FCEB7D /* SidebarTableViewController.m */; };
 		0438178E1DDB389A00FCEB7D /* SidebarTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0438178B1DDB389900FCEB7D /* SidebarTableViewController.m */; };
+		043817921DDE201B00FCEB7D /* RequestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043817911DDE201B00FCEB7D /* RequestViewController.m */; };
+		043817931DDE201B00FCEB7D /* RequestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043817911DDE201B00FCEB7D /* RequestViewController.m */; };
+		043817941DDE201B00FCEB7D /* RequestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043817911DDE201B00FCEB7D /* RequestViewController.m */; };
+		043817971DDE203100FCEB7D /* ContactUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043817961DDE203100FCEB7D /* ContactUsViewController.m */; };
+		043817981DDE203100FCEB7D /* ContactUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043817961DDE203100FCEB7D /* ContactUsViewController.m */; };
+		043817991DDE203100FCEB7D /* ContactUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043817961DDE203100FCEB7D /* ContactUsViewController.m */; };
+		0438179C1DDE204A00FCEB7D /* AboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0438179B1DDE204A00FCEB7D /* AboutUsViewController.m */; };
+		0438179D1DDE204A00FCEB7D /* AboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0438179B1DDE204A00FCEB7D /* AboutUsViewController.m */; };
+		0438179E1DDE204A00FCEB7D /* AboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0438179B1DDE204A00FCEB7D /* AboutUsViewController.m */; };
+		043817A11DDE205A00FCEB7D /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043817A01DDE205A00FCEB7D /* HelpViewController.m */; };
+		043817A21DDE205A00FCEB7D /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043817A01DDE205A00FCEB7D /* HelpViewController.m */; };
+		043817A31DDE205A00FCEB7D /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043817A01DDE205A00FCEB7D /* HelpViewController.m */; };
+		043817A61DDE207300FCEB7D /* ReferFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043817A51DDE207300FCEB7D /* ReferFriendViewController.m */; };
+		043817A71DDE207300FCEB7D /* ReferFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043817A51DDE207300FCEB7D /* ReferFriendViewController.m */; };
+		043817A81DDE207300FCEB7D /* ReferFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043817A51DDE207300FCEB7D /* ReferFriendViewController.m */; };
+		043817AB1DDE208C00FCEB7D /* SubscriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043817AA1DDE208C00FCEB7D /* SubscriptionViewController.m */; };
+		043817AC1DDE208C00FCEB7D /* SubscriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043817AA1DDE208C00FCEB7D /* SubscriptionViewController.m */; };
+		043817AD1DDE208C00FCEB7D /* SubscriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043817AA1DDE208C00FCEB7D /* SubscriptionViewController.m */; };
+		043817B01DDE209A00FCEB7D /* AccountsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043817AF1DDE209A00FCEB7D /* AccountsViewController.m */; };
+		043817B11DDE209A00FCEB7D /* AccountsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043817AF1DDE209A00FCEB7D /* AccountsViewController.m */; };
+		043817B21DDE209A00FCEB7D /* AccountsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043817AF1DDE209A00FCEB7D /* AccountsViewController.m */; };
 		04D5F83B1DD4BDE100CE1091 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D5F83A1DD4BDE100CE1091 /* main.m */; };
 		04D5F83E1DD4BDE100CE1091 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D5F83D1DD4BDE100CE1091 /* AppDelegate.m */; };
 		04D5F8411DD4BDE100CE1091 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D5F8401DD4BDE100CE1091 /* ViewController.m */; };
@@ -154,6 +175,20 @@
 		043817861DDB386500FCEB7D /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		0438178A1DDB389900FCEB7D /* SidebarTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SidebarTableViewController.h; sourceTree = "<group>"; };
 		0438178B1DDB389900FCEB7D /* SidebarTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SidebarTableViewController.m; sourceTree = "<group>"; };
+		043817901DDE201B00FCEB7D /* RequestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestViewController.h; sourceTree = "<group>"; };
+		043817911DDE201B00FCEB7D /* RequestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestViewController.m; sourceTree = "<group>"; };
+		043817951DDE203100FCEB7D /* ContactUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactUsViewController.h; sourceTree = "<group>"; };
+		043817961DDE203100FCEB7D /* ContactUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactUsViewController.m; sourceTree = "<group>"; };
+		0438179A1DDE204A00FCEB7D /* AboutUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutUsViewController.h; sourceTree = "<group>"; };
+		0438179B1DDE204A00FCEB7D /* AboutUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutUsViewController.m; sourceTree = "<group>"; };
+		0438179F1DDE205A00FCEB7D /* HelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpViewController.h; sourceTree = "<group>"; };
+		043817A01DDE205A00FCEB7D /* HelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpViewController.m; sourceTree = "<group>"; };
+		043817A41DDE207300FCEB7D /* ReferFriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReferFriendViewController.h; sourceTree = "<group>"; };
+		043817A51DDE207300FCEB7D /* ReferFriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReferFriendViewController.m; sourceTree = "<group>"; };
+		043817A91DDE208C00FCEB7D /* SubscriptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubscriptionViewController.h; sourceTree = "<group>"; };
+		043817AA1DDE208C00FCEB7D /* SubscriptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubscriptionViewController.m; sourceTree = "<group>"; };
+		043817AE1DDE209A00FCEB7D /* AccountsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountsViewController.h; sourceTree = "<group>"; };
+		043817AF1DDE209A00FCEB7D /* AccountsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountsViewController.m; sourceTree = "<group>"; };
 		04D5F8361DD4BDE100CE1091 /* MarketMastro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarketMastro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04D5F83A1DD4BDE100CE1091 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		04D5F83C1DD4BDE100CE1091 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -288,6 +323,20 @@
 				043817631DD9F2E500FCEB7D /* VerifyAndChangeMobileViewController.m */,
 				0438177F1DDA022800FCEB7D /* MainDashboardViewController.h */,
 				043817801DDA022800FCEB7D /* MainDashboardViewController.m */,
+				043817901DDE201B00FCEB7D /* RequestViewController.h */,
+				043817911DDE201B00FCEB7D /* RequestViewController.m */,
+				043817951DDE203100FCEB7D /* ContactUsViewController.h */,
+				043817961DDE203100FCEB7D /* ContactUsViewController.m */,
+				0438179A1DDE204A00FCEB7D /* AboutUsViewController.h */,
+				0438179B1DDE204A00FCEB7D /* AboutUsViewController.m */,
+				0438179F1DDE205A00FCEB7D /* HelpViewController.h */,
+				043817A01DDE205A00FCEB7D /* HelpViewController.m */,
+				043817A41DDE207300FCEB7D /* ReferFriendViewController.h */,
+				043817A51DDE207300FCEB7D /* ReferFriendViewController.m */,
+				043817A91DDE208C00FCEB7D /* SubscriptionViewController.h */,
+				043817AA1DDE208C00FCEB7D /* SubscriptionViewController.m */,
+				043817AE1DDE209A00FCEB7D /* AccountsViewController.h */,
+				043817AF1DDE209A00FCEB7D /* AccountsViewController.m */,
 			);
 			path = MarketMastro;
 			sourceTree = "<group>";
@@ -522,10 +571,17 @@
 				043817871DDB386500FCEB7D /* SWRevealViewController.m in Sources */,
 				0438175F1DD8B4B300FCEB7D /* SingInViewController.m in Sources */,
 				04D5F8411DD4BDE100CE1091 /* ViewController.m in Sources */,
+				043817B01DDE209A00FCEB7D /* AccountsViewController.m in Sources */,
 				04D5F83E1DD4BDE100CE1091 /* AppDelegate.m in Sources */,
+				043817971DDE203100FCEB7D /* ContactUsViewController.m in Sources */,
+				043817921DDE201B00FCEB7D /* RequestViewController.m in Sources */,
+				043817AB1DDE208C00FCEB7D /* SubscriptionViewController.m in Sources */,
+				043817A11DDE205A00FCEB7D /* HelpViewController.m in Sources */,
+				0438179C1DDE204A00FCEB7D /* AboutUsViewController.m in Sources */,
 				04D5F83B1DD4BDE100CE1091 /* main.m in Sources */,
 				043817811DDA022800FCEB7D /* MainDashboardViewController.m in Sources */,
 				043817641DD9F2E500FCEB7D /* VerifyAndChangeMobileViewController.m in Sources */,
+				043817A61DDE207300FCEB7D /* ReferFriendViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -534,11 +590,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				043817821DDA022800FCEB7D /* MainDashboardViewController.m in Sources */,
+				043817931DDE201B00FCEB7D /* RequestViewController.m in Sources */,
 				043817601DD8B4B300FCEB7D /* SingInViewController.m in Sources */,
+				043817AC1DDE208C00FCEB7D /* SubscriptionViewController.m in Sources */,
 				043817881DDB386500FCEB7D /* SWRevealViewController.m in Sources */,
+				043817B11DDE209A00FCEB7D /* AccountsViewController.m in Sources */,
 				043817651DD9F2E500FCEB7D /* VerifyAndChangeMobileViewController.m in Sources */,
+				043817A71DDE207300FCEB7D /* ReferFriendViewController.m in Sources */,
+				043817A21DDE205A00FCEB7D /* HelpViewController.m in Sources */,
 				0438178D1DDB389A00FCEB7D /* SidebarTableViewController.m in Sources */,
 				04D5F8541DD4BDE200CE1091 /* MarketMastroTests.m in Sources */,
+				043817981DDE203100FCEB7D /* ContactUsViewController.m in Sources */,
+				0438179D1DDE204A00FCEB7D /* AboutUsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -547,11 +610,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				043817831DDA022800FCEB7D /* MainDashboardViewController.m in Sources */,
+				043817941DDE201B00FCEB7D /* RequestViewController.m in Sources */,
 				043817611DD8B4B300FCEB7D /* SingInViewController.m in Sources */,
+				043817AD1DDE208C00FCEB7D /* SubscriptionViewController.m in Sources */,
 				043817891DDB386500FCEB7D /* SWRevealViewController.m in Sources */,
+				043817B21DDE209A00FCEB7D /* AccountsViewController.m in Sources */,
 				043817661DD9F2E500FCEB7D /* VerifyAndChangeMobileViewController.m in Sources */,
+				043817A81DDE207300FCEB7D /* ReferFriendViewController.m in Sources */,
+				043817A31DDE205A00FCEB7D /* HelpViewController.m in Sources */,
 				0438178E1DDB389A00FCEB7D /* SidebarTableViewController.m in Sources */,
 				04D5F85F1DD4BDE200CE1091 /* MarketMastroUITests.m in Sources */,
+				043817991DDE203100FCEB7D /* ContactUsViewController.m in Sources */,
+				0438179E1DDE204A00FCEB7D /* AboutUsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

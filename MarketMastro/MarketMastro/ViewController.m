@@ -61,13 +61,21 @@
 
     
 }
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:YES];
+    [self.navigationController.navigationBar setHidden:YES];
+}
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:YES];
+    [self.navigationController.navigationBar setHidden:NO];
+}
 - (UITextField *)placeHolderColor:(UITextField *)txt withSting:(NSString *)placeHolderString {
-    UIColor *color = [UIColor colorWithRed:154/255.0 green:154/255.0 blue:154/255.0 alpha:1.0];
+    UIColor *color = [UIColor colorWithRed:149/255.0 green:149/255.0 blue:149/255.0 alpha:1.0];
     txt.attributedPlaceholder = [[NSAttributedString alloc] initWithString:placeHolderString attributes:@{NSForegroundColorAttributeName: color}];
     return txt;
 }
 - (UITextField *)borderColor:(UITextField*)txt withMask:(BOOL)maskValue {
-        txt.layer.borderColor=[[UIColor darkTextColor]CGColor];
+        txt.layer.borderColor=[[UIColor colorWithRed:41/255.0 green:42/255.0 blue:43/255.0 alpha:1.0]CGColor];
         txt.layer.borderWidth= 0.1f;
         txt.layer.masksToBounds = maskValue;
     return txt;

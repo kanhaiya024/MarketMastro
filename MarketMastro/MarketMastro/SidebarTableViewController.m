@@ -21,7 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    menuItems = @[@"title", @"news", @"comments", @"map", @"calendar", @"wishlist", @"bookmark", @"tag"];
+    menuItems = @[@"market",@"portfolio",@"news",@"calendar",@"accounts",@"subscription",@"alertcenter",@"referfriend",@"help",@"aboutus",@"contactus",@"request"];
 }
 
 - (void)didReceiveMemoryWarning {
