@@ -473,7 +473,7 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <segue destination="gaK-Hs-N87" kind="custom" customClass="SWRevealViewControllerSegueSetController" id="ibQ-WF-Md1"/>
+                                    <segue destination="gaK-Hs-N87" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="rGf-vf-Myd"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="subscription" id="8iD-9O-xcm" userLabel="subscription">
@@ -542,7 +542,7 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <segue destination="QUC-bY-Zah" kind="custom" customClass="SWRevealViewControllerSegueSetController" id="NOL-1n-Hpw"/>
+                                    <segue destination="QUC-bY-Zah" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="vEg-EF-JyA"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="help" id="ZZU-Hk-k3d" userLabel="help">
@@ -567,7 +567,7 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <segue destination="b1L-QX-ldJ" kind="custom" customClass="SWRevealViewControllerSegueSetController" id="rup-mK-B9Z"/>
+                                    <segue destination="b1L-QX-ldJ" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="tj2-Xr-VAC"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="aboutus" id="EdE-qh-tv3" userLabel="aboutus">
@@ -592,7 +592,7 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <segue destination="ggR-6A-jWY" kind="custom" customClass="SWRevealViewControllerSegueSetController" id="qOI-8P-L28"/>
+                                    <segue destination="ggR-6A-jWY" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="TZi-rt-kOe"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="contactus" id="cBL-Qw-qZ0" userLabel="contactus">
@@ -617,7 +617,7 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <segue destination="uAD-WT-ECi" kind="custom" customClass="SWRevealViewControllerSegueSetController" id="ypl-nQ-pgG"/>
+                                    <segue destination="uAD-WT-ECi" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="GE4-yW-PYa"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="request" id="TrM-cp-bag" userLabel="request">
@@ -642,7 +642,7 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <segue destination="BJD-8k-Iko" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="OQ3-5d-0nK"/>
+                                    <segue destination="BJD-8k-Iko" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="ReJ-SB-Ze6"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -996,7 +996,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0XX-48-UbO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="318" y="-1414"/>
+            <point key="canvasLocation" x="208" y="-1464"/>
         </scene>
         <!--Accounts View Controller-->
         <scene sceneID="cYN-jw-cdp">
@@ -1132,7 +1132,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Id-GO-5on" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-549" y="-136"/>
+            <point key="canvasLocation" x="-605" y="-148"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2vH-6Z-5I1">
@@ -1168,7 +1168,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D0D-9D-WAK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-20" y="-1059"/>
+            <point key="canvasLocation" x="-35" y="-762"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="LP0-Rx-fNT">
@@ -1186,7 +1186,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2En-cK-HjM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-20" y="-1132"/>
+            <point key="canvasLocation" x="-26" y="-693"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Qbn-sR-cya">
@@ -1204,7 +1204,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jdf-gT-7to" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-50" y="-1366"/>
+            <point key="canvasLocation" x="38" y="-932"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="aZ7-9I-tFe">
@@ -1227,7 +1227,7 @@
                     </barButtonItem>
                 </navigationItem>
             </objects>
-            <point key="canvasLocation" x="-20" y="-1530"/>
+            <point key="canvasLocation" x="-181" y="-1503"/>
         </scene>
     </scenes>
     <resources>
