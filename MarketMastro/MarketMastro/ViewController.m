@@ -16,6 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.navigationController.navigationBar setTitleTextAttributes:
+     @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
 //    CALayer *bottomBorder = [CALayer layer];
 //    bottomBorder.frame = CGRectMake(0.0f, self.txtFieldFullName.frame.size.height - 1, self.txtFieldFullName.frame.size.width, 2.0f);
 //    bottomBorder.backgroundColor = [UIColor redColor].CGColor;

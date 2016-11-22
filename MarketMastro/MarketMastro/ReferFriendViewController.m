@@ -16,6 +16,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"Invite Friend";
+    [self.navigationController.navigationBar setTitleTextAttributes:
+     @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+
+
     // Do any additional setup after loading the view.
     SWRevealViewController *revealViewController = self.revealViewController;
     if ( revealViewController )

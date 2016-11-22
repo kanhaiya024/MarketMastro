@@ -17,7 +17,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     //[self.navigationController.navigationBar setTintColor:[UIColor colorWithRed:23/255.0 green:25/255.0 blue:27/255.0 alpha:1.0]];
-    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:23/255.0 green:25/255.0 blue:27/255.0 alpha:1.0]];
+    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:13/255.0 green:16/255.0 blue:20/255.0 alpha:1.0]];
+    [self.navigationController.navigationBar setTitleTextAttributes:
+     @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+
     // Do any additional setup after loading the view.
     SWRevealViewController *revealViewController = self.revealViewController;
     if ( revealViewController )
@@ -29,7 +32,7 @@
 }
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:YES];
-    [self.navigationController.navigationBar setTintColor:[UIColor colorWithRed:23/255.0 green:25/255.0 blue:27/255.0 alpha:1.0]];
+    [self.navigationController.navigationBar setTintColor:[UIColor colorWithRed:13/255.0 green:16/255.0 blue:20/255.0 alpha:1.0]];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
