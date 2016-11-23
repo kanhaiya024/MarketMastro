@@ -121,6 +121,12 @@
 		04D5F8491DD4BDE200CE1091 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D5F8471DD4BDE200CE1091 /* LaunchScreen.storyboard */; };
 		04D5F8541DD4BDE200CE1091 /* MarketMastroTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D5F8531DD4BDE200CE1091 /* MarketMastroTests.m */; };
 		04D5F85F1DD4BDE200CE1091 /* MarketMastroUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D5F85E1DD4BDE200CE1091 /* MarketMastroUITests.m */; };
+		AB314E501DE51BAC00228701 /* MyTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = AB314E4D1DE51BAC00228701 /* MyTextField.m */; };
+		AB314E511DE51BAC00228701 /* SubscriptionHistoryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AB314E4F1DE51BAC00228701 /* SubscriptionHistoryVC.m */; };
+		AB314E541DE526BC00228701 /* UpgradeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB314E531DE526BC00228701 /* UpgradeViewController.m */; };
+		AB314E571DE529F600228701 /* UpgradeDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AB314E561DE529F600228701 /* UpgradeDetailsVC.m */; };
+		AB314E5A1DE5337800228701 /* ModeOfPaymentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AB314E591DE5337800228701 /* ModeOfPaymentVC.m */; };
+		AB52FF311DE537F600D3204C /* OrderDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AB52FF301DE537F600D3204C /* OrderDetailsVC.m */; };
 		AB91F1C11DE073A00032AD9A /* ChangePassword.png in Resources */ = {isa = PBXBuildFile; fileRef = AB91F1C01DE073A00032AD9A /* ChangePassword.png */; };
 /* End PBXBuildFile section */
 
@@ -206,6 +212,18 @@
 		04D5F85A1DD4BDE200CE1091 /* MarketMastroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarketMastroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04D5F85E1DD4BDE200CE1091 /* MarketMastroUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarketMastroUITests.m; sourceTree = "<group>"; };
 		04D5F8601DD4BDE200CE1091 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB314E4C1DE51BAC00228701 /* MyTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTextField.h; sourceTree = "<group>"; };
+		AB314E4D1DE51BAC00228701 /* MyTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTextField.m; sourceTree = "<group>"; };
+		AB314E4E1DE51BAC00228701 /* SubscriptionHistoryVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubscriptionHistoryVC.h; sourceTree = "<group>"; };
+		AB314E4F1DE51BAC00228701 /* SubscriptionHistoryVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubscriptionHistoryVC.m; sourceTree = "<group>"; };
+		AB314E521DE526BC00228701 /* UpgradeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpgradeViewController.h; sourceTree = "<group>"; };
+		AB314E531DE526BC00228701 /* UpgradeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpgradeViewController.m; sourceTree = "<group>"; };
+		AB314E551DE529F600228701 /* UpgradeDetailsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpgradeDetailsVC.h; sourceTree = "<group>"; };
+		AB314E561DE529F600228701 /* UpgradeDetailsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpgradeDetailsVC.m; sourceTree = "<group>"; };
+		AB314E581DE5337800228701 /* ModeOfPaymentVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModeOfPaymentVC.h; sourceTree = "<group>"; };
+		AB314E591DE5337800228701 /* ModeOfPaymentVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModeOfPaymentVC.m; sourceTree = "<group>"; };
+		AB52FF2F1DE537F600D3204C /* OrderDetailsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderDetailsVC.h; sourceTree = "<group>"; };
+		AB52FF301DE537F600D3204C /* OrderDetailsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderDetailsVC.m; sourceTree = "<group>"; };
 		AB91F1C01DE073A00032AD9A /* ChangePassword.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChangePassword.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -321,6 +339,18 @@
 				04D5F84A1DD4BDE200CE1091 /* Info.plist */,
 				04D5F8391DD4BDE100CE1091 /* Supporting Files */,
 				0438175D1DD8B4B300FCEB7D /* SingInViewController.h */,
+				AB314E4C1DE51BAC00228701 /* MyTextField.h */,
+				AB314E4D1DE51BAC00228701 /* MyTextField.m */,
+				AB314E4E1DE51BAC00228701 /* SubscriptionHistoryVC.h */,
+				AB314E4F1DE51BAC00228701 /* SubscriptionHistoryVC.m */,
+				AB52FF2F1DE537F600D3204C /* OrderDetailsVC.h */,
+				AB52FF301DE537F600D3204C /* OrderDetailsVC.m */,
+				AB314E521DE526BC00228701 /* UpgradeViewController.h */,
+				AB314E531DE526BC00228701 /* UpgradeViewController.m */,
+				AB314E551DE529F600228701 /* UpgradeDetailsVC.h */,
+				AB314E561DE529F600228701 /* UpgradeDetailsVC.m */,
+				AB314E581DE5337800228701 /* ModeOfPaymentVC.h */,
+				AB314E591DE5337800228701 /* ModeOfPaymentVC.m */,
 				0438175E1DD8B4B300FCEB7D /* SingInViewController.m */,
 				043817621DD9F2E500FCEB7D /* VerifyAndChangeMobileViewController.h */,
 				043817631DD9F2E500FCEB7D /* VerifyAndChangeMobileViewController.m */,
@@ -572,18 +602,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				0438178C1DDB389A00FCEB7D /* SidebarTableViewController.m in Sources */,
+				AB314E571DE529F600228701 /* UpgradeDetailsVC.m in Sources */,
 				043817871DDB386500FCEB7D /* SWRevealViewController.m in Sources */,
 				0438175F1DD8B4B300FCEB7D /* SingInViewController.m in Sources */,
+				AB314E541DE526BC00228701 /* UpgradeViewController.m in Sources */,
 				04D5F8411DD4BDE100CE1091 /* ViewController.m in Sources */,
+				AB52FF311DE537F600D3204C /* OrderDetailsVC.m in Sources */,
 				043817B01DDE209A00FCEB7D /* AccountsViewController.m in Sources */,
 				04D5F83E1DD4BDE100CE1091 /* AppDelegate.m in Sources */,
 				043817971DDE203100FCEB7D /* ContactUsViewController.m in Sources */,
+				AB314E501DE51BAC00228701 /* MyTextField.m in Sources */,
 				043817921DDE201B00FCEB7D /* RequestViewController.m in Sources */,
 				043817AB1DDE208C00FCEB7D /* SubscriptionViewController.m in Sources */,
 				043817A11DDE205A00FCEB7D /* HelpViewController.m in Sources */,
 				0438179C1DDE204A00FCEB7D /* AboutUsViewController.m in Sources */,
+				AB314E511DE51BAC00228701 /* SubscriptionHistoryVC.m in Sources */,
 				04D5F83B1DD4BDE100CE1091 /* main.m in Sources */,
 				043817811DDA022800FCEB7D /* MainDashboardViewController.m in Sources */,
+				AB314E5A1DE5337800228701 /* ModeOfPaymentVC.m in Sources */,
 				043817641DD9F2E500FCEB7D /* VerifyAndChangeMobileViewController.m in Sources */,
 				043817A61DDE207300FCEB7D /* ReferFriendViewController.m in Sources */,
 			);

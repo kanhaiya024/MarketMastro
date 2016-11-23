@@ -10,6 +10,9 @@
 #import "SWRevealViewController.h"
 @interface SubscriptionViewController ()
 
+{
+    NSArray *menuItems;
+}
 @end
 
 @implementation SubscriptionViewController
@@ -20,6 +23,7 @@
     [self.navigationController.navigationBar setTitleTextAttributes:
      @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
 
+    menuItems = @[@"market",@"market1"];
 
     // Do any additional setup after loading the view.
     SWRevealViewController *revealViewController = self.revealViewController;
@@ -35,6 +39,8 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
 
 /*
 #pragma mark - Navigation
