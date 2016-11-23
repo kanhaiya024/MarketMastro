@@ -113,6 +113,7 @@
 		043817B01DDE209A00FCEB7D /* AccountsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043817AF1DDE209A00FCEB7D /* AccountsViewController.m */; };
 		043817B11DDE209A00FCEB7D /* AccountsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043817AF1DDE209A00FCEB7D /* AccountsViewController.m */; };
 		043817B21DDE209A00FCEB7D /* AccountsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043817AF1DDE209A00FCEB7D /* AccountsViewController.m */; };
+		04D23AB11DE5C46800014811 /* AlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D23AB01DE5C46800014811 /* AlertViewController.m */; };
 		04D5F83B1DD4BDE100CE1091 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D5F83A1DD4BDE100CE1091 /* main.m */; };
 		04D5F83E1DD4BDE100CE1091 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D5F83D1DD4BDE100CE1091 /* AppDelegate.m */; };
 		04D5F8411DD4BDE100CE1091 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D5F8401DD4BDE100CE1091 /* ViewController.m */; };
@@ -196,6 +197,8 @@
 		043817AA1DDE208C00FCEB7D /* SubscriptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubscriptionViewController.m; sourceTree = "<group>"; };
 		043817AE1DDE209A00FCEB7D /* AccountsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountsViewController.h; sourceTree = "<group>"; };
 		043817AF1DDE209A00FCEB7D /* AccountsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountsViewController.m; sourceTree = "<group>"; };
+		04D23AAF1DE5C46800014811 /* AlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertViewController.h; sourceTree = "<group>"; };
+		04D23AB01DE5C46800014811 /* AlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertViewController.m; sourceTree = "<group>"; };
 		04D5F8361DD4BDE100CE1091 /* MarketMastro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarketMastro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04D5F83A1DD4BDE100CE1091 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		04D5F83C1DD4BDE100CE1091 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -370,6 +373,8 @@
 				043817AA1DDE208C00FCEB7D /* SubscriptionViewController.m */,
 				043817AE1DDE209A00FCEB7D /* AccountsViewController.h */,
 				043817AF1DDE209A00FCEB7D /* AccountsViewController.m */,
+				04D23AAF1DE5C46800014811 /* AlertViewController.h */,
+				04D23AB01DE5C46800014811 /* AlertViewController.m */,
 			);
 			path = MarketMastro;
 			sourceTree = "<group>";
@@ -618,6 +623,7 @@
 				0438179C1DDE204A00FCEB7D /* AboutUsViewController.m in Sources */,
 				AB314E511DE51BAC00228701 /* SubscriptionHistoryVC.m in Sources */,
 				04D5F83B1DD4BDE100CE1091 /* main.m in Sources */,
+				04D23AB11DE5C46800014811 /* AlertViewController.m in Sources */,
 				043817811DDA022800FCEB7D /* MainDashboardViewController.m in Sources */,
 				AB314E5A1DE5337800228701 /* ModeOfPaymentVC.m in Sources */,
 				043817641DD9F2E500FCEB7D /* VerifyAndChangeMobileViewController.m in Sources */,

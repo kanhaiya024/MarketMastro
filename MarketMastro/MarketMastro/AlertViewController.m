@@ -1,39 +1,36 @@
 //
-//  UpgradeDetailsVC.m
+//  AlertViewController.m
 //  MarketMastro
 //
-//  Created by Kanhaiya on 23/11/16.
+//  Created by Mac on 23/11/16.
 //  Copyright © 2016 Macmittal software. All rights reserved.
 //
 
-#import "UpgradeDetailsVC.h"
-@interface UpgradeDetailsVC ()
+#import "AlertViewController.h"
+#import "SWRevealViewController.h"
+@interface AlertViewController ()
 
 @end
 
-@implementation UpgradeDetailsVC
+@implementation AlertViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"Subscribe";
     // Do any additional setup after loading the view.
-    // Do any additional setup after loading the view.
-    
+    SWRevealViewController *revealViewController = self.revealViewController;
+    if ( revealViewController )
+    {
+        [self.sidebarButton setTarget: self.revealViewController];
+        [self.sidebarButton setAction: @selector( revealToggle: )];
+        [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
--(IBAction)goBack:(id)sender
-{
-    [self.navigationController popViewControllerAnimated:YES];
-}
 
-- (BOOL)textFieldShouldReturn:(UITextField *)textField {
-    [textField resignFirstResponder];
-    return NO;
-}
 /*
 #pragma mark - Navigation
 

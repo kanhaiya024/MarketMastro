@@ -8,6 +8,7 @@
 
 #import "UpgradeViewController.h"
 #import "UpgradeDetailsVC.h"
+#import "SWRevealViewController.h"
 @interface UpgradeViewController ()
 {
     NSArray *menuItems;
@@ -21,6 +22,13 @@
     self.title = @"Select Package";
     menuItems = @[@"market",@"market1"];
     [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:13/255.0 green:16/255.0 blue:20/255.0 alpha:1.0]];
+    SWRevealViewController *revealViewController = self.revealViewController;
+    if ( revealViewController )
+    {
+        [self.sidebarButton setTarget: self.revealViewController];
+        [self.sidebarButton setAction: @selector( revealToggle: )];
+        [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+    }
     
     // Do any additional setup after loading the view.
 }
