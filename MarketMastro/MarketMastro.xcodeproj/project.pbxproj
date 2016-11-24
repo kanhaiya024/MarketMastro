@@ -122,6 +122,7 @@
 		04D5F8491DD4BDE200CE1091 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D5F8471DD4BDE200CE1091 /* LaunchScreen.storyboard */; };
 		04D5F8541DD4BDE200CE1091 /* MarketMastroTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D5F8531DD4BDE200CE1091 /* MarketMastroTests.m */; };
 		04D5F85F1DD4BDE200CE1091 /* MarketMastroUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D5F85E1DD4BDE200CE1091 /* MarketMastroUITests.m */; };
+		AB03728B1DE6361E002769D6 /* AlertListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AB03728A1DE6361E002769D6 /* AlertListVC.m */; };
 		AB314E501DE51BAC00228701 /* MyTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = AB314E4D1DE51BAC00228701 /* MyTextField.m */; };
 		AB314E511DE51BAC00228701 /* SubscriptionHistoryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AB314E4F1DE51BAC00228701 /* SubscriptionHistoryVC.m */; };
 		AB314E541DE526BC00228701 /* UpgradeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB314E531DE526BC00228701 /* UpgradeViewController.m */; };
@@ -215,6 +216,8 @@
 		04D5F85A1DD4BDE200CE1091 /* MarketMastroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarketMastroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04D5F85E1DD4BDE200CE1091 /* MarketMastroUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarketMastroUITests.m; sourceTree = "<group>"; };
 		04D5F8601DD4BDE200CE1091 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB0372891DE6361E002769D6 /* AlertListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertListVC.h; sourceTree = "<group>"; };
+		AB03728A1DE6361E002769D6 /* AlertListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertListVC.m; sourceTree = "<group>"; };
 		AB314E4C1DE51BAC00228701 /* MyTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTextField.h; sourceTree = "<group>"; };
 		AB314E4D1DE51BAC00228701 /* MyTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTextField.m; sourceTree = "<group>"; };
 		AB314E4E1DE51BAC00228701 /* SubscriptionHistoryVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubscriptionHistoryVC.h; sourceTree = "<group>"; };
@@ -375,6 +378,8 @@
 				043817AF1DDE209A00FCEB7D /* AccountsViewController.m */,
 				04D23AAF1DE5C46800014811 /* AlertViewController.h */,
 				04D23AB01DE5C46800014811 /* AlertViewController.m */,
+				AB0372891DE6361E002769D6 /* AlertListVC.h */,
+				AB03728A1DE6361E002769D6 /* AlertListVC.m */,
 			);
 			path = MarketMastro;
 			sourceTree = "<group>";
@@ -609,6 +614,7 @@
 				0438178C1DDB389A00FCEB7D /* SidebarTableViewController.m in Sources */,
 				AB314E571DE529F600228701 /* UpgradeDetailsVC.m in Sources */,
 				043817871DDB386500FCEB7D /* SWRevealViewController.m in Sources */,
+				AB03728B1DE6361E002769D6 /* AlertListVC.m in Sources */,
 				0438175F1DD8B4B300FCEB7D /* SingInViewController.m in Sources */,
 				AB314E541DE526BC00228701 /* UpgradeViewController.m in Sources */,
 				04D5F8411DD4BDE100CE1091 /* ViewController.m in Sources */,
