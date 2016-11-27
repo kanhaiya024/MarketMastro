@@ -16,6 +16,7 @@
 @implementation CreatePortflioVC
 
 - (void)viewDidLoad {
+    self.title = @"Create Commodities";
     [super viewDidLoad];
     _btn1.layer.borderColor = RGB(0, 122, 255).CGColor;
     _btn1.layer.borderWidth = 1;
