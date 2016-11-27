@@ -134,7 +134,7 @@
 
 
 #import <UIKit/UIKit.h>
-
+#import "AlertViewController.h"
 @class SWRevealViewController;
 @protocol SWRevealViewControllerDelegate;
 

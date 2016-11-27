@@ -59,6 +59,7 @@
     
     // Set the title of navigation bar by using the menu items
     NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    indexOfDrawer = (int)indexPath.row;
     UINavigationController *destViewController = (UINavigationController*)segue.destinationViewController;
     destViewController.title = [[menuItems objectAtIndex:indexPath.row] capitalizedString];
     

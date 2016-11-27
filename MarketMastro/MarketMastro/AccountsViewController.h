@@ -10,5 +10,6 @@
 
 @interface AccountsViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *sidebarButton;
+@property (nonatomic) BOOL is_NotFromDraw;
 
 @end

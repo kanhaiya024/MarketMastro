@@ -34,7 +34,12 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+-(IBAction)alertListBtnClick:(id)sender
+{
+    AlertViewController *calendarVC = [self.storyboard instantiateViewControllerWithIdentifier:@"AlertViewController"];
+    [self.navigationController pushViewController:calendarVC animated:YES];
+    
+}
 /*
 #pragma mark - Navigation
 

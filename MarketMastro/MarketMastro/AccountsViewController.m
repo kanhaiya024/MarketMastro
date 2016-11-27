@@ -8,6 +8,8 @@
 
 #import "AccountsViewController.h"
 #import "SWRevealViewController.h"
+#import "SubscriptionHistoryVC.h"
+#import "UpgradeViewController.h"
 @interface AccountsViewController ()
 
 @end
@@ -21,18 +23,40 @@
      @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
 
     // Do any additional setup after loading the view.
-    SWRevealViewController *revealViewController = self.revealViewController;
-    if ( revealViewController )
+    if(!_is_NotFromDraw)
     {
-        [self.sidebarButton setTarget: self.revealViewController];
-        [self.sidebarButton setAction: @selector( revealToggle: )];
-        [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+        SWRevealViewController *revealViewController = self.revealViewController;
+        if ( revealViewController )
+        {
+            [self.sidebarButton setTarget: self.revealViewController];
+            [self.sidebarButton setAction: @selector( revealToggle: )];
+            [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+        }
     }
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+-(IBAction)btnSubscriberBtnClick:(id)sender
+{
+    SubscriptionHistoryVC *subscriptionVC = [self.storyboard instantiateViewControllerWithIdentifier:@"SubscriptionHistoryVC"];
+    [self.navigationController pushViewController:subscriptionVC animated:YES];
+    
+}
+
+-(IBAction)btnUpgradeBtnClick:(id)sender
+{
+    UpgradeViewController *subscriptionVC = [self.storyboard instantiateViewControllerWithIdentifier:@"UpgradeViewController"];
+    [self.navigationController pushViewController:subscriptionVC animated:YES];
+
+}
+-(IBAction)alertListBtnClick:(id)sender
+{
+    AlertViewController *calendarVC = [self.storyboard instantiateViewControllerWithIdentifier:@"AlertViewController"];
+    [self.navigationController pushViewController:calendarVC animated:YES];
+    
 }
 
 /*

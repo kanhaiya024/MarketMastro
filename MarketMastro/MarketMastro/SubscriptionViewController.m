@@ -34,6 +34,12 @@
         [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
     }
 }
+-(IBAction)alertListBtnClick:(id)sender
+{
+    AlertViewController *calendarVC = [self.storyboard instantiateViewControllerWithIdentifier:@"AlertViewController"];
+    [self.navigationController pushViewController:calendarVC animated:YES];
+    
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

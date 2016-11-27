@@ -13,7 +13,7 @@
 @end
 
 @implementation AppDelegate
-
+int indexOfDrawer;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   
