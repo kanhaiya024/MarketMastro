@@ -145,6 +145,7 @@
 		AB6C1FCF1DEAC45A0093B03E /* selectedColor.png in Resources */ = {isa = PBXBuildFile; fileRef = AB6C1FCE1DEAC45A0093B03E /* selectedColor.png */; };
 		AB6C1FD21DEAC7EC0093B03E /* MoreItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB6C1FD11DEAC7EC0093B03E /* MoreItemsViewController.m */; };
 		AB6C1FD51DEAC94A0093B03E /* MoreItems1VC.m in Sources */ = {isa = PBXBuildFile; fileRef = AB6C1FD41DEAC94A0093B03E /* MoreItems1VC.m */; };
+		AB6C1FD81DEAEAFE0093B03E /* CreateAlertVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AB6C1FD71DEAEAFE0093B03E /* CreateAlertVC.m */; };
 		AB91F1C11DE073A00032AD9A /* ChangePassword.png in Resources */ = {isa = PBXBuildFile; fileRef = AB91F1C01DE073A00032AD9A /* ChangePassword.png */; };
 /* End PBXBuildFile section */
 
@@ -269,6 +270,8 @@
 		AB6C1FD11DEAC7EC0093B03E /* MoreItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreItemsViewController.m; sourceTree = "<group>"; };
 		AB6C1FD31DEAC94A0093B03E /* MoreItems1VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreItems1VC.h; sourceTree = "<group>"; };
 		AB6C1FD41DEAC94A0093B03E /* MoreItems1VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreItems1VC.m; sourceTree = "<group>"; };
+		AB6C1FD61DEAEAFE0093B03E /* CreateAlertVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateAlertVC.h; sourceTree = "<group>"; };
+		AB6C1FD71DEAEAFE0093B03E /* CreateAlertVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateAlertVC.m; sourceTree = "<group>"; };
 		AB91F1C01DE073A00032AD9A /* ChangePassword.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChangePassword.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -442,6 +445,8 @@
 				AB6C1FD11DEAC7EC0093B03E /* MoreItemsViewController.m */,
 				AB6C1FD31DEAC94A0093B03E /* MoreItems1VC.h */,
 				AB6C1FD41DEAC94A0093B03E /* MoreItems1VC.m */,
+				AB6C1FD61DEAEAFE0093B03E /* CreateAlertVC.h */,
+				AB6C1FD71DEAEAFE0093B03E /* CreateAlertVC.m */,
 			);
 			path = MarketMastro;
 			sourceTree = "<group>";
@@ -709,6 +714,7 @@
 				04D5F83B1DD4BDE100CE1091 /* main.m in Sources */,
 				04D23AB11DE5C46800014811 /* AlertViewController.m in Sources */,
 				043817811DDA022800FCEB7D /* MainDashboardViewController.m in Sources */,
+				AB6C1FD81DEAEAFE0093B03E /* CreateAlertVC.m in Sources */,
 				AB314E5A1DE5337800228701 /* ModeOfPaymentVC.m in Sources */,
 				043817641DD9F2E500FCEB7D /* VerifyAndChangeMobileViewController.m in Sources */,
 				043817A61DDE207300FCEB7D /* ReferFriendViewController.m in Sources */,

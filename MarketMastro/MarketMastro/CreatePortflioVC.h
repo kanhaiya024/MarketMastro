@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "CreateAlertVC.h"
 @interface CreatePortflioVC : UIViewController
 @property (weak, nonatomic) IBOutlet UIButton *btn1;
 @property (weak, nonatomic) IBOutlet UIButton *btn2;
@@ -17,6 +17,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *btn6;
 @property (weak, nonatomic) IBOutlet UIButton *btn7;
 @property (weak, nonatomic) IBOutlet UIButton *btn8;
+@property (weak, nonatomic) IBOutlet UIButton *btnSave;
+@property (nonatomic) BOOL isCreateAlert;
 
 
 @end

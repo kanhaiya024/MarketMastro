@@ -16,6 +16,8 @@
 @implementation CreatePortflioVC
 
 - (void)viewDidLoad {
+    selctedOption = @"";
+
     self.title = @"Create Commodities";
     [super viewDidLoad];
     _btn1.layer.borderColor = RGB(0, 122, 255).CGColor;
@@ -51,6 +53,10 @@
     
     _btn8.layer.borderColor = RGB(0, 122, 255).CGColor;
     _btn8.layer.borderWidth = 1;
+    if(_isCreateAlert)
+    {
+        self.btnSave.hidden = YES;
+    }
 
     // Do any additional setup after loading the view.
 }
@@ -65,10 +71,14 @@
     if(btn.selected)
     {
         btn.selected = NO;
-        
     }
     else{
          btn.selected = YES;
+        if(_isCreateAlert)
+        {
+            selctedOption = btn.currentTitle;
+            [self.navigationController popViewControllerAnimated:YES];
+        }
     }
 }
 -(IBAction)goBack:(id)sender

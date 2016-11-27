@@ -188,13 +188,6 @@
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="nCg-JS-yoL">
-                                                <rect key="frame" x="6" y="207" width="274" height="40"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="0.16078431372549018" green="0.32941176470588235" blue="0.52549019607843139" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                                <state key="normal" title="Continue"/>
-                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5VA-wh-5Oj">
                                                 <rect key="frame" x="51" y="252" width="183" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -204,6 +197,16 @@
                                                 </state>
                                                 <connections>
                                                     <segue destination="BYZ-38-t0r" kind="push" id="sVI-uo-vVk"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="nCg-JS-yoL">
+                                                <rect key="frame" x="6" y="209" width="274" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.16078431372549018" green="0.32941176470588235" blue="0.52549019607843139" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                <state key="normal" title="Continue"/>
+                                                <connections>
+                                                    <segue destination="7P3-GJ-rXn" kind="push" id="RF5-v9-Tak"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -271,7 +274,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="CZL-05-HWk" kind="push" id="sm3-EL-WNB"/>
+                                    <segue destination="7P3-GJ-rXn" kind="push" id="b1g-sM-RHX"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="otp_time_icon.png" id="Shk-sF-pY2">
@@ -2220,6 +2223,12 @@
                         <barButtonItem key="leftBarButtonItem" image="menu" id="0HT-it-rCk">
                             <color key="tintColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="act_addcommodities_ico" id="Q8M-8M-742">
+                            <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <segue destination="ggQ-m8-Dag" kind="push" id="iDs-Dq-YD9"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
@@ -3951,6 +3960,7 @@
                         <outlet property="btn6" destination="bbi-Lx-a2y" id="eSR-0P-RI8"/>
                         <outlet property="btn7" destination="uqS-oX-rSx" id="APK-c1-rxU"/>
                         <outlet property="btn8" destination="ALg-DF-92Z" id="5Lg-hW-rNb"/>
+                        <outlet property="btnSave" destination="dWS-qh-qfR" id="MrJ-3v-80q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uFI-6L-Q1d" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -4266,9 +4276,199 @@
             </objects>
             <point key="canvasLocation" x="509" y="-1300"/>
         </scene>
+        <!--Create AlertVC-->
+        <scene sceneID="xEu-kz-nnG">
+            <objects>
+                <viewController storyboardIdentifier="CreateAlertVC" automaticallyAdjustsScrollViewInsets="NO" id="ggQ-m8-Dag" customClass="CreateAlertVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tb6-YR-c0e">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="more_rightarrow_ico" id="EfD-3h-hgZ">
+                                <rect key="frame" x="285" y="91" width="12" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="oWx-Un-eGD">
+                                <rect key="frame" x="15" y="123" width="290" height="40"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.050980392159999999" green="0.062745098040000002" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="  Select Condition">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnSelectConditionBtnClick:" destination="ggQ-m8-Dag" eventType="touchUpInside" id="9T1-oZ-FRS"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="more_rightarrow_ico" id="sse-QB-Iut">
+                                <rect key="frame" x="285" y="133" width="12" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2FK-Bc-fJh">
+                                <rect key="frame" x="15" y="165" width="290" height="40"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.050980392159999999" green="0.062745098040000002" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ggQ-m8-Dag" kind="push" id="tZq-RH-hYd"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Price Value" textAlignment="natural" minimumFontSize="17" id="SyA-DX-ir2">
+                                <rect key="frame" x="21" y="170" width="276" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="ggQ-m8-Dag" id="k4Y-Sr-Cat"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="aI0-Pf-wvN">
+                                <rect key="frame" x="70" y="272" width="180" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Set Alert"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="setAlertBtnClick:" destination="ggQ-m8-Dag" eventType="touchUpInside" id="UOq-td-4Ev"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="aAQ-ac-X07">
+                                <rect key="frame" x="15" y="81" width="290" height="40"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.050980392159999999" green="0.062745098040000002" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="  Select Commodity">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectCommoditeBtnClick:" destination="ggQ-m8-Dag" eventType="touchUpInside" id="xbB-lg-T3T"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.090196078430000007" green="0.098039215690000001" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="4zv-IU-6PZ">
+                        <barButtonItem key="leftBarButtonItem" image="back-button" id="gHc-U4-z8F">
+                            <color key="tintColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="goBack:" destination="ggQ-m8-Dag" id="JMQ-fu-Vge"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="btnSelectComm" destination="aAQ-ac-X07" id="Age-SS-udJ"/>
+                        <outlet property="selectCondition" destination="oWx-Un-eGD" id="IbP-l4-ruq"/>
+                        <outlet property="txtFieldPrice" destination="SyA-DX-ir2" id="25k-wM-yZO"/>
+                        <outlet property="viewForAlertOption" destination="Wep-sJ-T1e" id="XfR-Ua-fbR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6mF-Xb-iFC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="Wep-sJ-T1e">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="GJ4-uW-Ott">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="tfn-zS-J1U">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="btnForDismiss:" destination="ggQ-m8-Dag" eventType="touchUpInside" id="28O-Rd-9IQ"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" id="Kmg-Yd-7h9">
+                            <rect key="frame" x="0.0" y="207" width="320" height="153"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="RcW-Ns-6cB">
+                                    <rect key="frame" x="14" y="5" width="298" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="Is Less Then (&lt;)">
+                                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="optionSelectBtnClick:" destination="ggQ-m8-Dag" eventType="touchUpInside" id="4ra-SK-2Xx"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="pix-GM-hwy">
+                                    <rect key="frame" x="14" y="35" width="298" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="is Greater Than (&gt;)">
+                                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="optionSelectBtnClick:" destination="ggQ-m8-Dag" eventType="touchUpInside" id="75N-kT-Aph"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="W4a-WY-7aV">
+                                    <rect key="frame" x="14" y="65" width="298" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="Is Less Then Equal To (&lt;=)">
+                                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="optionSelectBtnClick:" destination="ggQ-m8-Dag" eventType="touchUpInside" id="9D3-Bw-neD"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gWv-fG-tML">
+                                    <rect key="frame" x="14" y="94" width="298" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="Is Greater Then Equal To (&gt;=)">
+                                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="optionSelectBtnClick:" destination="ggQ-m8-Dag" eventType="touchUpInside" id="XJS-gh-KEl"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ser-gT-3sT">
+                                    <rect key="frame" x="14" y="123" width="298" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="Change %">
+                                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="optionSelectBtnClick:" destination="ggQ-m8-Dag" eventType="touchUpInside" id="8VJ-so-TBI"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="509" y="-1300"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Flag_of_the_United_States.svg.png" width="300" height="158"/>
+        <image name="act_addcommodities_ico" width="21" height="21"/>
         <image name="act_alert_ico" width="21" height="21"/>
         <image name="act_edit_ico" width="64" height="64"/>
         <image name="back-button" width="25" height="25"/>
@@ -4323,7 +4523,9 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="kKa-IB-HV8"/>
-        <segue reference="ycg-3a-6w9"/>
+        <segue reference="iDs-Dq-YD9"/>
+        <segue reference="sVI-uo-vVk"/>
+        <segue reference="RF5-v9-Tak"/>
         <segue reference="VV6-cH-hTn"/>
         <segue reference="dOZ-sX-Lf9"/>
     </inferredMetricsTieBreakers>

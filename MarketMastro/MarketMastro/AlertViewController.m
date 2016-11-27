@@ -8,6 +8,7 @@
 
 #import "AlertViewController.h"
 #import "SWRevealViewController.h"
+#import "CreateAlertVC.h"
 @interface AlertViewController ()
 
 @end
@@ -47,6 +48,10 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)createAlertVIew:(id)sender {
+    CreateAlertVC *createAlertvc = [self.storyboard instantiateViewControllerWithIdentifier:@"CreateAlertVC"];
+    [self.navigationController pushViewController:createAlertvc animated:YES];
 }
 
 /*
