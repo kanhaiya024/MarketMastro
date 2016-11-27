@@ -20,16 +20,30 @@
     [self.navigationController.navigationBar setTitleTextAttributes:
      @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
 
-    // Do any additional setup after loading the view.
-    SWRevealViewController *revealViewController = self.revealViewController;
-    if ( revealViewController )
+    
+    if(!_is_NotFromDraw)
     {
-        [self.sidebarButton setTarget: self.revealViewController];
-        [self.sidebarButton setAction: @selector( revealToggle: )];
-        [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+        SWRevealViewController *revealViewController = self.revealViewController;
+        if ( revealViewController )
+        {
+            [self.sidebarButton setTarget: self.revealViewController];
+            [self.sidebarButton setAction: @selector( revealToggle: )];
+            [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+        }
     }
-}
+    else{
+        [self.sidebarButton setImage:[UIImage imageNamed:@"back-button"]];
+        [self.sidebarButton setTarget: self];
+        [self.sidebarButton setAction: @selector( goBack: )];
 
+    }
+    // Do any additional setup after loading the view.
+
+}
+-(void)goBack:(id)sender
+{
+    [self.navigationController popViewControllerAnimated:YES];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

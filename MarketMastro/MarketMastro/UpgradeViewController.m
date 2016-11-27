@@ -32,6 +32,12 @@
             [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
         }
     }
+    else{
+        [self.sidebarButton setImage:[UIImage imageNamed:@"back-button"]];
+        [self.sidebarButton setTarget: self];
+        [self.sidebarButton setAction: @selector( goBack: )];
+        
+    }
 
     // Do any additional setup after loading the view.
 }

@@ -37,6 +37,8 @@
 -(IBAction)alertListBtnClick:(id)sender
 {
     AlertViewController *calendarVC = [self.storyboard instantiateViewControllerWithIdentifier:@"AlertViewController"];
+    calendarVC.is_NotFromDraw = YES;
+
     [self.navigationController pushViewController:calendarVC animated:YES];
     
 }
