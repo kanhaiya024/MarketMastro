@@ -141,6 +141,10 @@
 		AB6C1FC41DEA994B0093B03E /* Flag_of_the_United_States.svg.png in Resources */ = {isa = PBXBuildFile; fileRef = AB6C1FC31DEA994B0093B03E /* Flag_of_the_United_States.svg.png */; };
 		AB6C1FC71DEA9D250093B03E /* CalendarDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AB6C1FC61DEA9D250093B03E /* CalendarDetailsVC.m */; };
 		AB6C1FCA1DEAA55C0093B03E /* NewDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AB6C1FC91DEAA55C0093B03E /* NewDetailsVC.m */; };
+		AB6C1FCD1DEAC21E0093B03E /* CreatePortflioVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AB6C1FCC1DEAC21E0093B03E /* CreatePortflioVC.m */; };
+		AB6C1FCF1DEAC45A0093B03E /* selectedColor.png in Resources */ = {isa = PBXBuildFile; fileRef = AB6C1FCE1DEAC45A0093B03E /* selectedColor.png */; };
+		AB6C1FD21DEAC7EC0093B03E /* MoreItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB6C1FD11DEAC7EC0093B03E /* MoreItemsViewController.m */; };
+		AB6C1FD51DEAC94A0093B03E /* MoreItems1VC.m in Sources */ = {isa = PBXBuildFile; fileRef = AB6C1FD41DEAC94A0093B03E /* MoreItems1VC.m */; };
 		AB91F1C11DE073A00032AD9A /* ChangePassword.png in Resources */ = {isa = PBXBuildFile; fileRef = AB91F1C01DE073A00032AD9A /* ChangePassword.png */; };
 /* End PBXBuildFile section */
 
@@ -258,6 +262,13 @@
 		AB6C1FC61DEA9D250093B03E /* CalendarDetailsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarDetailsVC.m; sourceTree = "<group>"; };
 		AB6C1FC81DEAA55C0093B03E /* NewDetailsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewDetailsVC.h; sourceTree = "<group>"; };
 		AB6C1FC91DEAA55C0093B03E /* NewDetailsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewDetailsVC.m; sourceTree = "<group>"; };
+		AB6C1FCB1DEAC21E0093B03E /* CreatePortflioVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreatePortflioVC.h; sourceTree = "<group>"; };
+		AB6C1FCC1DEAC21E0093B03E /* CreatePortflioVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreatePortflioVC.m; sourceTree = "<group>"; };
+		AB6C1FCE1DEAC45A0093B03E /* selectedColor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selectedColor.png; sourceTree = "<group>"; };
+		AB6C1FD01DEAC7EC0093B03E /* MoreItemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreItemsViewController.h; sourceTree = "<group>"; };
+		AB6C1FD11DEAC7EC0093B03E /* MoreItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreItemsViewController.m; sourceTree = "<group>"; };
+		AB6C1FD31DEAC94A0093B03E /* MoreItems1VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreItems1VC.h; sourceTree = "<group>"; };
+		AB6C1FD41DEAC94A0093B03E /* MoreItems1VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreItems1VC.m; sourceTree = "<group>"; };
 		AB91F1C01DE073A00032AD9A /* ChangePassword.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChangePassword.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -290,6 +301,7 @@
 		043817111DD74AD700FCEB7D /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				AB6C1FCE1DEAC45A0093B03E /* selectedColor.png */,
 				AB6C1FC31DEA994B0093B03E /* Flag_of_the_United_States.svg.png */,
 				AB6C1FC11DEA8C0A0093B03E /* ts-thakur-ravi-shankar-prasad-759.jpg */,
 				AB6C1FB51DEA894C0093B03E /* rbi-Reu-L.jpg */,
@@ -424,6 +436,12 @@
 				AB6C1FC91DEAA55C0093B03E /* NewDetailsVC.m */,
 				AB0372891DE6361E002769D6 /* AlertListVC.h */,
 				AB03728A1DE6361E002769D6 /* AlertListVC.m */,
+				AB6C1FCB1DEAC21E0093B03E /* CreatePortflioVC.h */,
+				AB6C1FCC1DEAC21E0093B03E /* CreatePortflioVC.m */,
+				AB6C1FD01DEAC7EC0093B03E /* MoreItemsViewController.h */,
+				AB6C1FD11DEAC7EC0093B03E /* MoreItemsViewController.m */,
+				AB6C1FD31DEAC94A0093B03E /* MoreItems1VC.h */,
+				AB6C1FD41DEAC94A0093B03E /* MoreItems1VC.m */,
 			);
 			path = MarketMastro;
 			sourceTree = "<group>";
@@ -558,6 +576,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB6C1FCF1DEAC45A0093B03E /* selectedColor.png in Resources */,
 				043817331DD7664700FCEB7D /* reg_location_icon@3x.png in Resources */,
 				0438173F1DD7664700FCEB7D /* reg_user_icon.png in Resources */,
 				0438174E1DD766B600FCEB7D /* reg_target_icon@2x.png in Resources */,
@@ -675,15 +694,18 @@
 				AB52FF311DE537F600D3204C /* OrderDetailsVC.m in Sources */,
 				AB6C1FC71DEA9D250093B03E /* CalendarDetailsVC.m in Sources */,
 				AB6C1FB11DE9B0450093B03E /* CreditCardHistoryVC.m in Sources */,
+				AB6C1FD51DEAC94A0093B03E /* MoreItems1VC.m in Sources */,
 				043817B01DDE209A00FCEB7D /* AccountsViewController.m in Sources */,
 				04D5F83E1DD4BDE100CE1091 /* AppDelegate.m in Sources */,
 				043817971DDE203100FCEB7D /* ContactUsViewController.m in Sources */,
 				AB314E501DE51BAC00228701 /* MyTextField.m in Sources */,
 				043817921DDE201B00FCEB7D /* RequestViewController.m in Sources */,
+				AB6C1FCD1DEAC21E0093B03E /* CreatePortflioVC.m in Sources */,
 				043817AB1DDE208C00FCEB7D /* SubscriptionViewController.m in Sources */,
 				043817A11DDE205A00FCEB7D /* HelpViewController.m in Sources */,
 				0438179C1DDE204A00FCEB7D /* AboutUsViewController.m in Sources */,
 				AB314E511DE51BAC00228701 /* SubscriptionHistoryVC.m in Sources */,
+				AB6C1FD21DEAC7EC0093B03E /* MoreItemsViewController.m in Sources */,
 				04D5F83B1DD4BDE100CE1091 /* main.m in Sources */,
 				04D23AB11DE5C46800014811 /* AlertViewController.m in Sources */,
 				043817811DDA022800FCEB7D /* MainDashboardViewController.m in Sources */,
