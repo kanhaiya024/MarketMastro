@@ -147,6 +147,7 @@
 		AB6C1FD51DEAC94A0093B03E /* MoreItems1VC.m in Sources */ = {isa = PBXBuildFile; fileRef = AB6C1FD41DEAC94A0093B03E /* MoreItems1VC.m */; };
 		AB6C1FD81DEAEAFE0093B03E /* CreateAlertVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AB6C1FD71DEAEAFE0093B03E /* CreateAlertVC.m */; };
 		AB91F1C11DE073A00032AD9A /* ChangePassword.png in Resources */ = {isa = PBXBuildFile; fileRef = AB91F1C01DE073A00032AD9A /* ChangePassword.png */; };
+		ABCF78DC1DF4A8CF00BB35FB /* Main-iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABCF78DB1DF4A8CF00BB35FB /* Main-iPad.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -273,6 +274,7 @@
 		AB6C1FD61DEAEAFE0093B03E /* CreateAlertVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateAlertVC.h; sourceTree = "<group>"; };
 		AB6C1FD71DEAEAFE0093B03E /* CreateAlertVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateAlertVC.m; sourceTree = "<group>"; };
 		AB91F1C01DE073A00032AD9A /* ChangePassword.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChangePassword.png; sourceTree = "<group>"; };
+		ABCF78DB1DF4A8CF00BB35FB /* Main-iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Main-iPad.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -391,6 +393,7 @@
 				04D5F8401DD4BDE100CE1091 /* ViewController.m */,
 				AB91F1C01DE073A00032AD9A /* ChangePassword.png */,
 				04D5F8421DD4BDE200CE1091 /* Main.storyboard */,
+				ABCF78DB1DF4A8CF00BB35FB /* Main-iPad.storyboard */,
 				04D5F8451DD4BDE200CE1091 /* Assets.xcassets */,
 				04D5F8471DD4BDE200CE1091 /* LaunchScreen.storyboard */,
 				04D5F84A1DD4BDE200CE1091 /* Info.plist */,
@@ -589,6 +592,7 @@
 				043817361DD7664700FCEB7D /* reg_mobile_icon.png in Resources */,
 				AB6C1FB81DEA89F20093B03E /* castro-obit-759.jpg in Resources */,
 				043817761DD9F84600FCEB7D /* otp_time_icon.png in Resources */,
+				ABCF78DC1DF4A8CF00BB35FB /* Main-iPad.storyboard in Resources */,
 				043817391DD7664700FCEB7D /* reg_mobile_icon@2x.png in Resources */,
 				04D5F8491DD4BDE200CE1091 /* LaunchScreen.storyboard in Resources */,
 				043817451DD7664700FCEB7D /* reg_user_icon@3x.png in Resources */,
