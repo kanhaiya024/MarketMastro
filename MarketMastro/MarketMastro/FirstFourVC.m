@@ -22,6 +22,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self reloadView];
+    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:13/255.0 green:16/255.0 blue:20/255.0 alpha:1.0]];
+    [self.navigationController.navigationBar setTitleTextAttributes:
+     @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+
     [self.navigationController.navigationBar setTitleTextAttributes:
      @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
     menuItems = @[@"market",@"market1",@"market2",@"market3",@"market4",@"market5",@"market6"];
@@ -35,6 +39,35 @@
         [self.sidebarButton setAction: @selector( revealToggle: )];
         [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
     }
+    
+//    UIBarButtonItem *btnShare = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(share)];
+    
+//    UIBarButtonItem *btnRefresh = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(alertListBtnClick:)];
+//    [btnRefresh setBackgroundImage:<#(nullable UIImage *)#> forState:<#(UIControlState)#> style:<#(UIBarButtonItemStyle)#> barMetrics:<#(UIBarMetrics)#>]
+
+    
+   
+    /*
+    UIButton *settingsBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 21, 21)];
+    [settingsBtn addTarget:self action:@selector(SettingsClicked) forControlEvents:UIControlEventTouchUpInside];
+    [settingsBtn setBackgroundImage:[UIImage imageNamed:@"act_addcommodities_ico"] forState:UIControlStateNormal];
+    
+    
+    UIButton *settingsBtn2 = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 21, 21)];
+    [settingsBtn2 addTarget:self action:@selector(alertListBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+    [settingsBtn2 setBackgroundImage:[UIImage imageNamed:@"act_alert_ico"] forState:UIControlStateNormal];
+
+    UIBarButtonItem *settingsButton1 = [[UIBarButtonItem alloc] initWithCustomView:settingsBtn];
+
+    UIBarButtonItem *settingsButton2 = [[UIBarButtonItem alloc] initWithCustomView:settingsBtn2];
+
+    [self.navigationItem setRightBarButtonItems:[NSArray arrayWithObjects:settingsButton1, settingsButton2, nil]];
+
+    */
+    
+//    UIBarButtonItem *settingsButton = [[UIBarButtonItem alloc] initWithCustomView:settingsView];
+
+    
     // Do any additional setup after loading the view.
 }
 #pragma mark - Table view data source

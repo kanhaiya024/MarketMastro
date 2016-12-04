@@ -51,7 +51,7 @@
     NSMutableAttributedString *string = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@",self.lableTerms.text]];
     NSRange rangeOne = [self.lableTerms.text rangeOfString:@"Terms of service"];
     NSRange rangeTwo = [self.lableTerms.text rangeOfString:@"Privacy Policy"];
-    [string addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"Helvetica Bold" size:12.0] range:NSMakeRange(10, 14)];
+    [string addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"Helvetica Bold" size:IS_IPAD ?19:12.0] range:NSMakeRange(10, 14)];
     [string addAttribute:NSForegroundColorAttributeName value:[UIColor whiteColor] range:rangeOne];
     [string addAttribute:NSForegroundColorAttributeName value:[UIColor whiteColor] range:rangeTwo];
     self.lableTerms.attributedText = string;
@@ -101,45 +101,56 @@
 
 - (void)keyboardWillShow:(NSNotification *)note
 {
-    CGRect keyboardBounds;
-    NSValue *aValue = [note.userInfo objectForKey:UIKeyboardFrameBeginUserInfoKey];
-    
-    [aValue getValue:&keyboardBounds];
-    // int keyboardHeight = keyboardBounds.size.height;
-    if (!keyboardIsShowing)
+    if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone )
     {
-        keyboardIsShowing = YES;
-        CGRect frame = self.view.frame;
-        frame.size.height -= 210;
+        CGRect keyboardBounds;
+        NSValue *aValue = [note.userInfo objectForKey:UIKeyboardFrameBeginUserInfoKey];
         
-        [UIView beginAnimations:nil context:NULL];
-        [UIView setAnimationBeginsFromCurrentState:YES];
-        [UIView setAnimationDuration:0.3f];
-        self.view.frame = frame;
-        [UIView commitAnimations];
+        [aValue getValue:&keyboardBounds];
+        // int keyboardHeight = keyboardBounds.size.height;
+        if (!keyboardIsShowing)
+        {
+            keyboardIsShowing = YES;
+            CGRect frame = self.view.frame;
+            frame.size.height -= 210;
+            
+            [UIView beginAnimations:nil context:NULL];
+            [UIView setAnimationBeginsFromCurrentState:YES];
+            [UIView setAnimationDuration:0.3f];
+            self.view.frame = frame;
+            [UIView commitAnimations];
+        }
     }
+    
 }
 
 - (void)keyboardWillHide:(NSNotification *)note
 {
-    CGRect keyboardBounds;
-    NSValue *aValue = [note.userInfo valueForKey:UIKeyboardFrameEndUserInfoKey];
-    [aValue getValue: &keyboardBounds];
     
-    // keyboardHeight = keyboardBounds.size.height;
-    if (keyboardIsShowing)
+    if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone )
     {
-        keyboardIsShowing = NO;
-        CGRect frame = self.view.frame;
-        frame.size.height += 210;
+        CGRect keyboardBounds;
+        NSValue *aValue = [note.userInfo valueForKey:UIKeyboardFrameEndUserInfoKey];
+        [aValue getValue: &keyboardBounds];
         
-        [UIView beginAnimations:nil context:NULL];
-        [UIView setAnimationBeginsFromCurrentState:YES];
-        [UIView setAnimationDuration:0.3f];
-        self.view.frame = frame;
-        [UIView commitAnimations];
-        
+        // keyboardHeight = keyboardBounds.size.height;
+        if (keyboardIsShowing)
+        {
+            keyboardIsShowing = NO;
+            CGRect frame = self.view.frame;
+            frame.size.height += 210;
+            
+            [UIView beginAnimations:nil context:NULL];
+            [UIView setAnimationBeginsFromCurrentState:YES];
+            [UIView setAnimationDuration:0.3f];
+            self.view.frame = frame;
+            [UIView commitAnimations];
+            
+        }
+
     }
+    
+    
 }
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
