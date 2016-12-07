@@ -16,7 +16,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"Subscribe";
-    // Do any additional setup after loading the view.
+    [self.navigationController.navigationBar setTitleTextAttributes:
+     @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+
     // Do any additional setup after loading the view.
     
 }

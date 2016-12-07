@@ -49,6 +49,7 @@
 -(IBAction)btnUpgradeBtnClick:(id)sender
 {
     UpgradeViewController *subscriptionVC = [self.storyboard instantiateViewControllerWithIdentifier:@"UpgradeViewController"];
+    subscriptionVC.is_NotFromDraw = YES;
     [self.navigationController pushViewController:subscriptionVC animated:YES];
 
 }

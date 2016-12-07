@@ -21,6 +21,9 @@
     [super viewDidLoad];
     menuItems = @[@"market",@"market2"];
     [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:13/255.0 green:16/255.0 blue:20/255.0 alpha:1.0]];
+    [self.navigationController.navigationBar setTitleTextAttributes:
+     @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+
 
     // Do any additional setup after loading the view.
 }

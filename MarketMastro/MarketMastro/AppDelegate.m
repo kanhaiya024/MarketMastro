@@ -16,20 +16,6 @@
 int indexOfDrawer;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    UIStoryboard *mainStoryboard;
-    if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad )
-    {
-        mainStoryboard= [UIStoryboard storyboardWithName:@"Main-iPad"  bundle: nil];
-        ViewController *homeVC=[mainStoryboard instantiateViewControllerWithIdentifier:@"ViewController"];
-        self.navController=[[UINavigationController alloc] initWithRootViewController:homeVC];
-        self.window.rootViewController=self.navController;
-
-    }
-    else
-    {
-//        mainStoryboard= [UIStoryboard storyboardWithName:@"Main"  bundle: nil];
-        
-    }//userID
   
     // Override point for customization after application launch. testing
     return YES;
