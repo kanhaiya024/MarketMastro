@@ -21,6 +21,9 @@
     [super viewDidLoad];
     self.title = @"Select Package";
     menuItems = @[@"market",@"market1"];
+    [self.navigationController.navigationBar setTitleTextAttributes:
+     @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+
     [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:13/255.0 green:16/255.0 blue:20/255.0 alpha:1.0]];
     if(!_is_NotFromDraw)
     {
