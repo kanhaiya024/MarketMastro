@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
-@interface FirstFourVC : UIViewController<UITableViewDelegate>
+@interface FirstFourVC : UIViewController<UITableViewDelegate,UICollectionViewDelegate,UICollectionViewDataSource>
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *sidebarButton;
 @property (weak, nonatomic) IBOutlet UIView *viewForNews;
 @property (weak, nonatomic) IBOutlet UIView *viewForPortflio;
@@ -19,6 +19,6 @@
 @property (nonatomic, strong) IBOutlet UITableView * tableViewForCalendar;
 @property (nonatomic, strong) IBOutlet UITableView * tableViewForPortfolio;
 @property (nonatomic, strong) IBOutlet UITableView * tableViewForMarket;
-
+@property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
 
 @end

@@ -547,7 +547,7 @@
 				TargetAttributes = {
 					04D5F8351DD4BDE100CE1091 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 3Y88T2PUEH;
+						DevelopmentTeam = L6XD6J8YPC;
 					};
 					04D5F84E1DD4BDE200CE1091 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -899,7 +899,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.vodlo.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -914,7 +914,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.vodlo.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -14,6 +14,8 @@
 @interface FirstFourVC ()
 {
     NSArray *menuItems;
+    NSArray *arrOfCollctionList;
+
 }
 @end
 
@@ -29,6 +31,10 @@
     [self.navigationController.navigationBar setTitleTextAttributes:
      @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
     menuItems = @[@"market",@"market1",@"market2",@"market3",@"market4",@"market5",@"market6"];
+    
+    arrOfCollctionList = @[@"Agri",@"Costing & Difference",@"Expected MCX",@"Local Spot",@"International",@"Bullion",@"Base Metals",@"Energy"];
+    [_collectionView reloadData];
+
     [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:13/255.0 green:16/255.0 blue:20/255.0 alpha:1.0]];
     
     // Do any additional setup after loading the view.
@@ -330,6 +336,24 @@
     calendarVC.is_NotFromDraw = YES;
 
     [self.navigationController pushViewController:calendarVC animated:YES];
+
+}
+
+#pragma mark - Collectionview Delegate
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    return [arrOfCollctionList count];
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    UICollectionViewCell *cell;
+    
+    cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"collectionCell" forIndexPath:indexPath];
+    UIButton *btn = (UIButton *)[cell viewWithTag:1];
+    [btn setTitle:arrOfCollctionList[indexPath.row] forState:UIControlStateNormal];
+    return cell;
 
 }
 /*
