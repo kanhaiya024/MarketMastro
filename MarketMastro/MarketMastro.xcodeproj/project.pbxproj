@@ -122,6 +122,7 @@
 		04D5F8491DD4BDE200CE1091 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D5F8471DD4BDE200CE1091 /* LaunchScreen.storyboard */; };
 		04D5F8541DD4BDE200CE1091 /* MarketMastroTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D5F8531DD4BDE200CE1091 /* MarketMastroTests.m */; };
 		04D5F85F1DD4BDE200CE1091 /* MarketMastroUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D5F85E1DD4BDE200CE1091 /* MarketMastroUITests.m */; };
+		91DD2D941E362E500054BCE6 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DD2D931E362E500054BCE6 /* LocationViewController.m */; };
 		AB03728B1DE6361E002769D6 /* AlertListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AB03728A1DE6361E002769D6 /* AlertListVC.m */; };
 		AB314E501DE51BAC00228701 /* MyTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = AB314E4D1DE51BAC00228701 /* MyTextField.m */; };
 		AB314E511DE51BAC00228701 /* SubscriptionHistoryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AB314E4F1DE51BAC00228701 /* SubscriptionHistoryVC.m */; };
@@ -234,6 +235,8 @@
 		04D5F85A1DD4BDE200CE1091 /* MarketMastroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarketMastroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04D5F85E1DD4BDE200CE1091 /* MarketMastroUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarketMastroUITests.m; sourceTree = "<group>"; };
 		04D5F8601DD4BDE200CE1091 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91DD2D921E362E500054BCE6 /* LocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
+		91DD2D931E362E500054BCE6 /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
 		AB0372891DE6361E002769D6 /* AlertListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertListVC.h; sourceTree = "<group>"; };
 		AB03728A1DE6361E002769D6 /* AlertListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertListVC.m; sourceTree = "<group>"; };
 		AB314E4C1DE51BAC00228701 /* MyTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTextField.h; sourceTree = "<group>"; };
@@ -450,6 +453,8 @@
 				AB6C1FD41DEAC94A0093B03E /* MoreItems1VC.m */,
 				AB6C1FD61DEAEAFE0093B03E /* CreateAlertVC.h */,
 				AB6C1FD71DEAEAFE0093B03E /* CreateAlertVC.m */,
+				91DD2D921E362E500054BCE6 /* LocationViewController.h */,
+				91DD2D931E362E500054BCE6 /* LocationViewController.m */,
 			);
 			path = MarketMastro;
 			sourceTree = "<group>";
@@ -702,6 +707,7 @@
 				04D5F8411DD4BDE100CE1091 /* ViewController.m in Sources */,
 				AB52FF311DE537F600D3204C /* OrderDetailsVC.m in Sources */,
 				AB6C1FC71DEA9D250093B03E /* CalendarDetailsVC.m in Sources */,
+				91DD2D941E362E500054BCE6 /* LocationViewController.m in Sources */,
 				AB6C1FB11DE9B0450093B03E /* CreditCardHistoryVC.m in Sources */,
 				AB6C1FD51DEAC94A0093B03E /* MoreItems1VC.m in Sources */,
 				043817B01DDE209A00FCEB7D /* AccountsViewController.m in Sources */,
@@ -899,7 +905,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.vodlo.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -914,7 +920,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.vodlo.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

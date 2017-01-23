@@ -11,10 +11,13 @@
 #import "CalendarDetailsVC.h"
 #import "NewDetailsVC.h"
 #import "AlertViewController.h"
+#import "LocationViewController.h"
 @interface FirstFourVC ()
 {
     NSArray *menuItems;
     NSArray *arrOfCollctionList;
+    int selectedIndexCollection;
+    UIButton *previousBtn;
 
 }
 @end
@@ -23,16 +26,31 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.tableViewForMarket7.hidden = YES;
+
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(locationUpdate:) name:@"CityLocationUpdate" object:nil];
     [self reloadView];
+    selectedIndexCollection = 0;
+    self.scrollViewForMarket.contentSize = CGSizeMake((SCREEN_WIDTH)*8, 0);
     [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:13/255.0 green:16/255.0 blue:20/255.0 alpha:1.0]];
     [self.navigationController.navigationBar setTitleTextAttributes:
      @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
 
     [self.navigationController.navigationBar setTitleTextAttributes:
      @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    self.tableViewForMarket.frame = CGRectMake(5, self.tableViewForMarket.frame.origin.y, self.tableViewForMarket.frame.size.width, self.tableViewForMarket.frame.size.height);
+
+    self.tableViewForMarket2.frame = CGRectMake(SCREEN_WIDTH+5, self.tableViewForMarket2.frame.origin.y, self.tableViewForMarket2.frame.size.width, self.tableViewForMarket2.frame.size.height);
+     self.tableViewForMarket3.frame = CGRectMake((SCREEN_WIDTH *2)+10, self.tableViewForMarket3.frame.origin.y, self.tableViewForMarket3.frame.size.width, self.tableViewForMarket3.frame.size.height);
+     self.tableViewForMarket4.frame = CGRectMake((SCREEN_WIDTH *3)+10, self.tableViewForMarket4.frame.origin.y, self.tableViewForMarket4.frame.size.width, self.tableViewForMarket4.frame.size.height);
+     self.tableViewForMarket5.frame = CGRectMake((SCREEN_WIDTH *4)+10, self.tableViewForMarket5.frame.origin.y, self.tableViewForMarket5.frame.size.width, self.tableViewForMarket5.frame.size.height);
+    self.tableViewForMarket6.frame = CGRectMake((SCREEN_WIDTH *5)+10, self.tableViewForMarket6.frame.origin.y, self.tableViewForMarket6.frame.size.width, self.tableViewForMarket6.frame.size.height);
+    
+     self.tableViewForMarket7.frame = CGRectMake((SCREEN_WIDTH *6)+10, self.tableViewForMarket7.frame.origin.y, self.tableViewForMarket7.frame.size.width, self.tableViewForMarket7.frame.size.height);
+     self.tableViewForMarket8.frame = CGRectMake((SCREEN_WIDTH *7)+5, self.tableViewForMarket8.frame.origin.y, self.tableViewForMarket8.frame.size.width, self.tableViewForMarket8.frame.size.height);
     menuItems = @[@"market",@"market1",@"market2",@"market3",@"market4",@"market5",@"market6"];
     
-    arrOfCollctionList = @[@"Agri",@"Costing & Difference",@"Expected MCX",@"Local Spot",@"International",@"Bullion",@"Base Metals",@"Energy"];
+    arrOfCollctionList = @[@"Agri",@"Costing & Difference",@"Expected MCX",@"Bullion",@"Base Metals",@"Energy",@"Local Spot",@"International"];
     [_collectionView reloadData];
 
     [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:13/255.0 green:16/255.0 blue:20/255.0 alpha:1.0]];
@@ -51,7 +69,30 @@
 //    UIBarButtonItem *btnRefresh = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(alertListBtnClick:)];
 //    [btnRefresh setBackgroundImage:<#(nullable UIImage *)#> forState:<#(UIControlState)#> style:<#(UIBarButtonItemStyle)#> barMetrics:<#(UIBarMetrics)#>]
 
+    /* Title
+     ICON Search City
+     
+     Mumbai
+     Pune
+     Ahmedbad
+     Rajkot
+     Hyderabad
+     Vijaywada
+     Nellore
+     Vizag
+     Warangal
+     Other
+     
+     
+     Gold Bar
+     intellect
+     
+     
+     MLGGOLD999
+     MAHALAKSMI G 239351.00 29406.09
+     */
     
+
    
     /*
     UIButton *settingsBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 21, 21)];
@@ -353,9 +394,53 @@
     cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"collectionCell" forIndexPath:indexPath];
     UIButton *btn = (UIButton *)[cell viewWithTag:1];
     [btn setTitle:arrOfCollctionList[indexPath.row] forState:UIControlStateNormal];
+    if(indexPath.row == selectedIndexCollection)
+    {
+        btn.selected = YES;
+        previousBtn = btn;
+    }
+    else{
+        btn.selected = NO;
+    }
     return cell;
+}
+
+-(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+{
+    NSInteger pagenumber = scrollView.contentOffset.x / scrollView.bounds.size.width;
+    UICollectionViewCell *cell = [self.collectionView cellForItemAtIndexPath:[NSIndexPath indexPathForRow:pagenumber inSection:0]];
+    UIButton *btn = (UIButton *)[cell viewWithTag:1];
+    btn.selected = YES;
 
 }
+- (IBAction)btnSelectOnMarketOption:(UIButton *)sender{
+    NSIndexPath *indexPath = nil;
+    previousBtn.selected = NO;
+//    previousBtn = nil;
+    indexPath = [self.collectionView indexPathForItemAtPoint:[self.collectionView convertPoint:sender.center fromView:sender.superview]];
+    selectedIndexCollection = (int)indexPath.row;
+    
+    [self.scrollViewForMarket setContentOffset:CGPointMake(indexPath.row*SCREEN_WIDTH, 0) animated:YES];
+    sender.selected = YES;
+    previousBtn = sender;
+
+//    [self.collectionView reloadData];
+
+}
+-(void)locationUpdate:(NSNotification*)sender
+{
+    NSDictionary *dict = [sender userInfo];
+    [self.btnCityTitle setTitle: [NSString stringWithFormat:@"            %@",[dict objectForKey:@"Location"]] forState:UIControlStateNormal];
+    self.tableViewForMarket7.hidden = NO;
+    [self.tableViewForMarket7 reloadData];
+}
+- (IBAction)locationBtnClick:(id)sender {
+    LocationViewController *calendarVC = [self.storyboard instantiateViewControllerWithIdentifier:@"LocationViewController"];
+    [self.navigationController pushViewController:calendarVC animated:YES];
+
+    
+}
+
 /*
 #pragma mark - Navigation
 
