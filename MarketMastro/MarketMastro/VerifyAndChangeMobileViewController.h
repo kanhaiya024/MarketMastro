@@ -18,3 +18,4 @@
 @property (nonatomic, strong) IBOutlet UILabel *labelOTPTime;
 @property (nonatomic, strong) IBOutlet UIImageView *imageViewClockTime;
 @end
+//1,925

@@ -26,7 +26,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.tableViewForMarket7.hidden = YES;
+//    self.tableViewForMarket7.hidden = YES;
 
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(locationUpdate:) name:@"CityLocationUpdate" object:nil];
     [self reloadView];
@@ -130,6 +130,10 @@
     {
         return menuItems.count;
     }
+    else if(tableView.tag == 900)
+    {
+        return 2;
+    }
     else {
         return 15;
     }
@@ -147,10 +151,12 @@
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         cell.backgroundColor = [UIColor clearColor];
     }
+   
     else
     {
         NSString *CellIdentifier = @"market";
         cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+        UILabel *label = (UILabel*)[cell viewWithTag:1];
         cell.backgroundColor = [UIColor clearColor];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         cell.backgroundColor = [UIColor clearColor];
@@ -431,14 +437,20 @@
 {
     NSDictionary *dict = [sender userInfo];
     [self.btnCityTitle setTitle: [NSString stringWithFormat:@"            %@",[dict objectForKey:@"Location"]] forState:UIControlStateNormal];
-    self.tableViewForMarket7.hidden = NO;
-    [self.tableViewForMarket7 reloadData];
+    UITableView *tableView = (UITableView*)[self.view viewWithTag:900];
+    
+    tableView.hidden = NO;
+    [tableView reloadData];
 }
 - (IBAction)locationBtnClick:(id)sender {
     LocationViewController *calendarVC = [self.storyboard instantiateViewControllerWithIdentifier:@"LocationViewController"];
     [self.navigationController pushViewController:calendarVC animated:YES];
 
     
+}
+-(void)goBack:(id)sender
+{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 /*
@@ -450,5 +462,7 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+
 
 @end
