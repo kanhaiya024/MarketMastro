@@ -46,7 +46,7 @@
      self.tableViewForMarket5.frame = CGRectMake((SCREEN_WIDTH *4)+10, self.tableViewForMarket5.frame.origin.y, self.tableViewForMarket5.frame.size.width, self.tableViewForMarket5.frame.size.height);
     self.tableViewForMarket6.frame = CGRectMake((SCREEN_WIDTH *5)+10, self.tableViewForMarket6.frame.origin.y, self.tableViewForMarket6.frame.size.width, self.tableViewForMarket6.frame.size.height);
     
-     self.tableViewForMarket7.frame = CGRectMake((SCREEN_WIDTH *6)+10, self.tableViewForMarket7.frame.origin.y, self.tableViewForMarket7.frame.size.width, self.tableViewForMarket7.frame.size.height);
+     self.viewForMarket7.frame = CGRectMake((SCREEN_WIDTH *6)+10, self.viewForMarket7.frame.origin.y, self.viewForMarket7.frame.size.width, self.viewForMarket7.frame.size.height);
      self.tableViewForMarket8.frame = CGRectMake((SCREEN_WIDTH *7)+5, self.tableViewForMarket8.frame.origin.y, self.tableViewForMarket8.frame.size.width, self.tableViewForMarket8.frame.size.height);
     menuItems = @[@"market",@"market1",@"market2",@"market3",@"market4",@"market5",@"market6"];
     

@@ -122,6 +122,9 @@
 		04D5F8491DD4BDE200CE1091 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D5F8471DD4BDE200CE1091 /* LaunchScreen.storyboard */; };
 		04D5F8541DD4BDE200CE1091 /* MarketMastroTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D5F8531DD4BDE200CE1091 /* MarketMastroTests.m */; };
 		04D5F85F1DD4BDE200CE1091 /* MarketMastroUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D5F85E1DD4BDE200CE1091 /* MarketMastroUITests.m */; };
+		911113D41E3710720043BB8F /* LocationDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 911113D31E3710720043BB8F /* LocationDetailsVC.m */; };
+		911113D71E3715C00043BB8F /* MarketDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 911113D61E3715C00043BB8F /* MarketDetailsVC.m */; };
+		911113DD1E372C040043BB8F /* MarketCreateAlertVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 911113DC1E372C040043BB8F /* MarketCreateAlertVC.m */; };
 		91DD2D941E362E500054BCE6 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DD2D931E362E500054BCE6 /* LocationViewController.m */; };
 		AB03728B1DE6361E002769D6 /* AlertListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AB03728A1DE6361E002769D6 /* AlertListVC.m */; };
 		AB314E501DE51BAC00228701 /* MyTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = AB314E4D1DE51BAC00228701 /* MyTextField.m */; };
@@ -235,6 +238,12 @@
 		04D5F85A1DD4BDE200CE1091 /* MarketMastroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarketMastroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04D5F85E1DD4BDE200CE1091 /* MarketMastroUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarketMastroUITests.m; sourceTree = "<group>"; };
 		04D5F8601DD4BDE200CE1091 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		911113D21E3710720043BB8F /* LocationDetailsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationDetailsVC.h; sourceTree = "<group>"; };
+		911113D31E3710720043BB8F /* LocationDetailsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationDetailsVC.m; sourceTree = "<group>"; };
+		911113D51E3715C00043BB8F /* MarketDetailsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarketDetailsVC.h; sourceTree = "<group>"; };
+		911113D61E3715C00043BB8F /* MarketDetailsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarketDetailsVC.m; sourceTree = "<group>"; };
+		911113DB1E372C040043BB8F /* MarketCreateAlertVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarketCreateAlertVC.h; sourceTree = "<group>"; };
+		911113DC1E372C040043BB8F /* MarketCreateAlertVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarketCreateAlertVC.m; sourceTree = "<group>"; };
 		91DD2D921E362E500054BCE6 /* LocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
 		91DD2D931E362E500054BCE6 /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
 		AB0372891DE6361E002769D6 /* AlertListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertListVC.h; sourceTree = "<group>"; };
@@ -455,6 +464,12 @@
 				AB6C1FD71DEAEAFE0093B03E /* CreateAlertVC.m */,
 				91DD2D921E362E500054BCE6 /* LocationViewController.h */,
 				91DD2D931E362E500054BCE6 /* LocationViewController.m */,
+				911113D21E3710720043BB8F /* LocationDetailsVC.h */,
+				911113D31E3710720043BB8F /* LocationDetailsVC.m */,
+				911113D51E3715C00043BB8F /* MarketDetailsVC.h */,
+				911113D61E3715C00043BB8F /* MarketDetailsVC.m */,
+				911113DB1E372C040043BB8F /* MarketCreateAlertVC.h */,
+				911113DC1E372C040043BB8F /* MarketCreateAlertVC.m */,
 			);
 			path = MarketMastro;
 			sourceTree = "<group>";
@@ -699,7 +714,9 @@
 				0438178C1DDB389A00FCEB7D /* SidebarTableViewController.m in Sources */,
 				AB314E571DE529F600228701 /* UpgradeDetailsVC.m in Sources */,
 				043817871DDB386500FCEB7D /* SWRevealViewController.m in Sources */,
+				911113D41E3710720043BB8F /* LocationDetailsVC.m in Sources */,
 				AB6C1FB41DEA7A8E0093B03E /* FirstFourVC.m in Sources */,
+				911113DD1E372C040043BB8F /* MarketCreateAlertVC.m in Sources */,
 				AB03728B1DE6361E002769D6 /* AlertListVC.m in Sources */,
 				0438175F1DD8B4B300FCEB7D /* SingInViewController.m in Sources */,
 				AB6C1FCA1DEAA55C0093B03E /* NewDetailsVC.m in Sources */,
@@ -714,6 +731,7 @@
 				04D5F83E1DD4BDE100CE1091 /* AppDelegate.m in Sources */,
 				043817971DDE203100FCEB7D /* ContactUsViewController.m in Sources */,
 				AB314E501DE51BAC00228701 /* MyTextField.m in Sources */,
+				911113D71E3715C00043BB8F /* MarketDetailsVC.m in Sources */,
 				043817921DDE201B00FCEB7D /* RequestViewController.m in Sources */,
 				AB6C1FCD1DEAC21E0093B03E /* CreatePortflioVC.m in Sources */,
 				043817AB1DDE208C00FCEB7D /* SubscriptionViewController.m in Sources */,
@@ -905,7 +923,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.vodlo.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -920,7 +938,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.vodlo.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

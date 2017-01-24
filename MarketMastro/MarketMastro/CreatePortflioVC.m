@@ -17,6 +17,7 @@
 
 - (void)viewDidLoad {
     selctedOption = @"";
+    selctedOptionMarket = @"";
 
     self.title = @"Create Commodities";
     [super viewDidLoad];
@@ -77,6 +78,8 @@
         if(_isCreateAlert)
         {
             selctedOption = btn.currentTitle;
+            selctedOptionMarket = btn.currentTitle;
+
             [self.navigationController popViewControllerAnimated:YES];
         }
     }

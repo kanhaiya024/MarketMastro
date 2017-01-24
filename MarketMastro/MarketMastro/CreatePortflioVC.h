@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "CreateAlertVC.h"
+#import "MarketCreateAlertVC.h"
+
 @interface CreatePortflioVC : UIViewController
 @property (weak, nonatomic) IBOutlet UIButton *btn1;
 @property (weak, nonatomic) IBOutlet UIButton *btn2;
