@@ -5156,7 +5156,7 @@
                                 <rect key="frame" x="18" y="82" width="20" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search City" textAlignment="natural" minimumFontSize="17" id="4RY-lF-8qR">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search City" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" id="4RY-lF-8qR">
                                 <rect key="frame" x="43" y="77" width="257" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -5227,6 +5227,7 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="tableView" destination="bEA-nz-e8p" id="tra-1k-y77"/>
+                        <outlet property="txtFieldSearch" destination="4RY-lF-8qR" id="XnK-Va-4Bc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="36l-Rl-myB" userLabel="First Responder" sceneMemberID="firstResponder"/>

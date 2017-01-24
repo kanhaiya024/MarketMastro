@@ -34,9 +34,7 @@
 -(IBAction)addtionButtonClick:(id)sender
 {
     self.viewForAddOptions.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
-    [self.view addSubview:self.viewForAddOptions];
-    
-    
+    [self.view addSubview:self.viewForAddOptions];    
 }
 
 -(IBAction)addPortfolioButtonClick:(id)sender

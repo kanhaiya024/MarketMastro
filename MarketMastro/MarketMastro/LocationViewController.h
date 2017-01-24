@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LocationViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+@interface LocationViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,UITextFieldDelegate>
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) IBOutlet UITextField *txtFieldSearch;
 
 @end

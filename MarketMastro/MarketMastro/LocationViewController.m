@@ -11,6 +11,7 @@
 @interface LocationViewController ()
 {
     NSArray *cityList;
+    NSMutableArray *defaultCityList;
 }
 @end
 
@@ -19,18 +20,31 @@
 - (void)viewDidLoad {
     self.title= @"Select City";
     [super viewDidLoad];
-    cityList = [NSArray arrayWithObjects:@"Mumbai",@"Pune",@"Ahmedbad",@"Rajkot",@"Hyderabad",@"Vijaywada",@"Nellore",@"Vizag",@"Warangal",@"Other", nil];
-    
-    
-    
+    defaultCityList = [NSMutableArray arrayWithObjects:@"Mumbai",@"Pune",@"Ahmedabad",@"Rajkot",@"Hyderabad",@"Vijaywada",@"Nellore",@"Vizag",@"Warangal",@"Other", nil];
     [self.tableView reloadData];
-    
-    
-    
-    
-    
+    cityList = [defaultCityList copy];
+    [self.tableView reloadData];
+    [self.txtFieldSearch addTarget:self action:@selector(searchCityTxt:) forControlEvents:UIControlEventEditingChanged];
     
     // Do any additional setup after loading the view.
+}
+-(IBAction)goBack:(id)sender
+{
+    [self.navigationController popViewControllerAnimated:YES];
+}
+- (void)searchCityTxt:(UITextField*)textField
+{
+    if([textField.text length] > 0)
+    {
+        NSPredicate *aPredicate = [NSPredicate predicateWithFormat:@"SELF contains[cd] %@",self.txtFieldSearch.text];
+        cityList = [defaultCityList filteredArrayUsingPredicate:aPredicate];
+    }
+    else
+    {
+        cityList = [defaultCityList copy];
+    }
+    [self.tableView reloadData];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -59,7 +73,6 @@
     label.text = [cityList objectAtIndex:indexPath.row];
     cell.backgroundColor = [UIColor clearColor];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    cell.backgroundColor = [UIColor clearColor];
     return cell;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
