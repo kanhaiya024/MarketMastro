@@ -413,10 +413,14 @@
 
 -(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
 {
+    previousBtn.selected = NO;
+
     NSInteger pagenumber = scrollView.contentOffset.x / scrollView.bounds.size.width;
     UICollectionViewCell *cell = [self.collectionView cellForItemAtIndexPath:[NSIndexPath indexPathForRow:pagenumber inSection:0]];
     UIButton *btn = (UIButton *)[cell viewWithTag:1];
     btn.selected = YES;
+    previousBtn = btn;
+
 
 }
 - (IBAction)btnSelectOnMarketOption:(UIButton *)sender{
