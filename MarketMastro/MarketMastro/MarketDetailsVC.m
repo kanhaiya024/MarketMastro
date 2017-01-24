@@ -20,6 +20,7 @@
     self.title = @"Silver March 2007";
 
     [super viewDidLoad];
+    [self.scrollView setContentSize:CGSizeMake(0, 700)];
     // Do any additional setup after loading the view.
 }
 

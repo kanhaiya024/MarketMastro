@@ -11,5 +11,6 @@
 @interface MarketDetailsVC : UIViewController
 @property (strong, nonatomic) IBOutlet UIView *viewForAddOptions;
 @property (strong, nonatomic) IBOutlet UIView *viewForPopupView;
+@property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
 
 @end
