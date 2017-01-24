@@ -30,6 +30,7 @@
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollViewForMarket;
 @property (strong, nonatomic) IBOutlet UIButton *btnCityTitle;
 @property (weak, nonatomic) IBOutlet UIView *viewForMarket7;
+//@property (strong, nonatomic) IBOutlet UINavigationItem *navigationItem;
 
 
 @end
