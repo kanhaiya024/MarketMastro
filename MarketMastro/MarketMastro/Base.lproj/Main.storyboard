@@ -4310,7 +4310,7 @@
                             </label>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="nZR-Lb-7Gi">
                                 <rect key="frame" x="0.0" y="227" width="320" height="249"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bullion" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PIp-QF-Y6Q">
                                         <rect key="frame" x="69.5" y="4" width="179" height="25"/>
@@ -4672,7 +4672,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uFI-6L-Q1d" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="afY-6R-bzf">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="5" id="jDs-WP-fGM">
                         <size key="itemSize" width="97" height="46"/>
@@ -4704,10 +4704,9 @@
                                         <connections>
                                             <action selector="btnClick:" destination="uD7-kG-QyT" eventType="touchUpInside" id="c6G-3c-mxG"/>
                                             <action selector="btnTapOnSearchResults:" destination="uD7-kG-QyT" eventType="touchUpInside" id="of9-vf-DQ4"/>
-                                            <segue destination="Bha-rD-JAs" kind="push" id="KGe-n8-slX"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="05 Dec 2016" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5ei-Bt-kXL">
+                                    <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="05 Dec 2016" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5ei-Bt-kXL">
                                         <rect key="frame" x="4" y="21" width="90" height="25"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="10"/>
@@ -6270,8 +6269,8 @@
         <segue reference="kKa-IB-HV8"/>
         <segue reference="ycg-3a-6w9"/>
         <segue reference="b1g-sM-RHX"/>
-        <segue reference="KGe-n8-slX"/>
-        <segue reference="VV6-cH-hTn"/>
+        <segue reference="van-qw-JcM"/>
         <segue reference="dOZ-sX-Lf9"/>
+        <segue reference="VV6-cH-hTn"/>
     </inferredMetricsTieBreakers>
 </document>

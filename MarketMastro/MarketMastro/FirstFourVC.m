@@ -66,13 +66,22 @@
     }
     
 
+    [self rightBtnMake];
+    
+    // Do any additional setup after loading the view.
+}
+
+-(void)rightBtnMake
+{
+    self.navigationItem.rightBarButtonItems = nil;
+
     UIImage *btnImage = [UIImage imageNamed:@"act_alert_ico"];
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     btn.bounds = CGRectMake( 0, 0, btnImage.size.width, btnImage.size.height );
     [btn addTarget:self action:@selector(alertListBtnClick:) forControlEvents:UIControlEventTouchDown];
     [btn setImage:btnImage forState:UIControlStateNormal];
     UIBarButtonItem *btnAlert = [[UIBarButtonItem alloc] initWithCustomView:btn];
-
+    
     UIImage *btnImage1 = [UIImage imageNamed:@"search_ico"];
     UIButton *btn1 = [UIButton buttonWithType:UIButtonTypeCustom];
     btn1.bounds = CGRectMake( 0, 0, btnImage.size.width, btnImage.size.height );
@@ -81,13 +90,12 @@
     UIBarButtonItem *btnSearch = [[UIBarButtonItem alloc] initWithCustomView:btn1];
     
     self.navigationItem.rightBarButtonItems = @[btnAlert,btnSearch];
-    
-    // Do any additional setup after loading the view.
 }
 #pragma mark - Table view data source
 -(void)searchBtnClick:(id)sender
 {
     CreatePortflioVC *createVC = [self.storyboard instantiateViewControllerWithIdentifier:@"CreatePortflioVC"];
+    createVC.isSearchOption = YES;
     [self.navigationController pushViewController:createVC animated:YES];
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -179,6 +187,7 @@
         [self.viewForPortflio removeFromSuperview];
         self.viewForMarket.frame = CGRectMake(0, 135,SCREEN_WIDTH, SCREEN_HEIGHT-135);
         [self.view addSubview:self.viewForMarket];
+        [self rightBtnMake];
 //        [self.tableViewForCalendar reloadData];
 
 
@@ -196,6 +205,7 @@
         self.viewForPortflio.frame = CGRectMake(0, 135,SCREEN_WIDTH, SCREEN_HEIGHT-135);
         [self.view addSubview:self.viewForPortflio];
 
+        [self rightBtnMake];
 
 
     }
@@ -213,7 +223,7 @@
         self.viewForNews.frame = CGRectMake(0, 135,SCREEN_WIDTH, SCREEN_HEIGHT-135);
         [self.view addSubview:self.viewForNews];
         [self.tableViewForNews reloadData];
-
+        self.navigationItem.rightBarButtonItems = nil;
 
     }
     else if(indexOfDrawer == 3)
@@ -227,6 +237,8 @@
         self.viewForCalendar.frame = CGRectMake(0, 135,SCREEN_WIDTH, SCREEN_HEIGHT-135);
         [self.view addSubview:self.viewForCalendar];
         [self.tableViewForCalendar reloadData];
+        self.navigationItem.rightBarButtonItems = nil;
+
 
     }
 }
@@ -253,7 +265,8 @@
         [self.view addSubview:self.viewForMarket];
         [self.tableViewForMarket reloadData];
 
-        
+        [self rightBtnMake];
+
     }
     else if(btn == btnPortfolio)
     {
@@ -272,6 +285,8 @@
         [self.viewForMarket removeFromSuperview];
         self.viewForPortflio.frame = CGRectMake(0, 135,SCREEN_WIDTH, SCREEN_HEIGHT-135);
         [self.view addSubview:self.viewForPortflio];
+        [self rightBtnMake];
+
     }
     else if(btn == btnNews)
     {
@@ -287,6 +302,7 @@
         [self.tableViewForNews reloadData];
         [self.viewForMarket removeFromSuperview];
         [self.viewForPortflio removeFromSuperview];
+        self.navigationItem.rightBarButtonItems = nil;
 
 
     }
@@ -307,6 +323,8 @@
         [self.viewForMarket removeFromSuperview];
         [self.viewForPortflio removeFromSuperview];
         [self.tableViewForCalendar reloadData];
+        self.navigationItem.rightBarButtonItems = nil;
+
     }
 }
 - (IBAction)btnClickOnCalendarDays:(id)sender {
