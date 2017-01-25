@@ -23,6 +23,7 @@
 @property (nonatomic) BOOL isCreateAlert;
 @property (strong, nonatomic) IBOutlet UICollectionView *collectionViewSearch;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollViewWS;
+@property (strong, nonatomic) IBOutlet UITextField *txtFieldForSearch;
 
 
 @end

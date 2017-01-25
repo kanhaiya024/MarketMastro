@@ -1685,7 +1685,7 @@ const int FrontViewPositionNone = 0xff;
     
     if (sb)
     {
-        vc = (SWRevealViewController*)[sb instantiateViewControllerWithIdentifier:@"SWRevealViewController"];
+        vc = (SWRevealViewController*)[ sb instantiateViewControllerWithIdentifier:@"SWRevealViewController"];
         vc.restorationIdentifier = [identifierComponents lastObject];
         vc.restorationClass = [SWRevealViewController class];
     }

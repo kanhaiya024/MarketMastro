@@ -4085,7 +4085,7 @@
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </view>
             </objects>
-            <point key="canvasLocation" x="-1415" y="421"/>
+            <point key="canvasLocation" x="-1078" y="906"/>
         </scene>
         <!--Calendar DetailsVC-->
         <scene sceneID="hYG-1p-tUA">
@@ -4638,7 +4638,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <outlet property="delegate" destination="5jn-4u-J1k" id="siS-TN-voN"/>
+                                    <action selector="searchCommTxt:" destination="uD7-kG-QyT" eventType="editingChanged" id="VSs-rk-Nun"/>
+                                    <outlet property="delegate" destination="uD7-kG-QyT" id="0G8-W6-fLB"/>
                                 </connections>
                             </textField>
                         </subviews>
@@ -4665,6 +4666,7 @@
                         <outlet property="btnSave" destination="dWS-qh-qfR" id="MrJ-3v-80q"/>
                         <outlet property="collectionViewSearch" destination="afY-6R-bzf" id="b5Q-9R-OIm"/>
                         <outlet property="scrollViewWS" destination="nZR-Lb-7Gi" id="fXp-9w-O5N"/>
+                        <outlet property="txtFieldForSearch" destination="Auq-5d-Jd5" id="Fzr-Dn-u1t"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uFI-6L-Q1d" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -4686,7 +4688,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="97" height="46"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <subviews>
-                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="EEq-Iz-vXG">
+                                    <button opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="EEq-Iz-vXG">
                                         <rect key="frame" x="4" y="4" width="89" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -4701,6 +4703,8 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="btnClick:" destination="uD7-kG-QyT" eventType="touchUpInside" id="c6G-3c-mxG"/>
+                                            <action selector="btnTapOnSearchResults:" destination="uD7-kG-QyT" eventType="touchUpInside" id="of9-vf-DQ4"/>
+                                            <segue destination="Bha-rD-JAs" kind="push" id="KGe-n8-slX"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="05 Dec 2016" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5ei-Bt-kXL">
@@ -4716,6 +4720,10 @@
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         </collectionViewCell>
                     </cells>
+                    <connections>
+                        <outlet property="dataSource" destination="uD7-kG-QyT" id="c5f-9k-Jsh"/>
+                        <outlet property="delegate" destination="uD7-kG-QyT" id="KL0-Ql-Ufw"/>
+                    </connections>
                 </collectionView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="6Wg-FB-6t3">
                     <rect key="frame" x="0.0" y="0.0" width="1" height="20"/>
@@ -6260,9 +6268,9 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="kKa-IB-HV8"/>
-        <segue reference="b1g-sM-RHX"/>
         <segue reference="ycg-3a-6w9"/>
-        <segue reference="NAB-Sw-I8c"/>
+        <segue reference="b1g-sM-RHX"/>
+        <segue reference="KGe-n8-slX"/>
         <segue reference="VV6-cH-hTn"/>
         <segue reference="dOZ-sX-Lf9"/>
     </inferredMetricsTieBreakers>
