@@ -21,6 +21,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *btn8;
 @property (weak, nonatomic) IBOutlet UIButton *btnSave;
 @property (nonatomic) BOOL isCreateAlert;
+@property (strong, nonatomic) IBOutlet UICollectionView *collectionViewSearch;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollViewWS;
 
 
 @end
