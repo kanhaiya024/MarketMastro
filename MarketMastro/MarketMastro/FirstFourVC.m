@@ -82,6 +82,13 @@
     [btn setImage:btnImage forState:UIControlStateNormal];
     UIBarButtonItem *btnAlert = [[UIBarButtonItem alloc] initWithCustomView:btn];
     
+    // create a spacer between the buttons
+    UIBarButtonItem *fixedSpace =
+    [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace
+                                                  target:nil
+                                                  action:nil];
+    fixedSpace.width = 20;
+    
     UIImage *btnImage1 = [UIImage imageNamed:@"search_ico"];
     UIButton *btn1 = [UIButton buttonWithType:UIButtonTypeCustom];
     btn1.bounds = CGRectMake( 0, 0, btnImage.size.width, btnImage.size.height );
@@ -89,7 +96,7 @@
     [btn1 setImage:btnImage1 forState:UIControlStateNormal];
     UIBarButtonItem *btnSearch = [[UIBarButtonItem alloc] initWithCustomView:btn1];
     
-    self.navigationItem.rightBarButtonItems = @[btnAlert,btnSearch];
+    self.navigationItem.rightBarButtonItems = @[btnAlert,fixedSpace,btnSearch];
 }
 #pragma mark - Table view data source
 -(void)searchBtnClick:(id)sender
